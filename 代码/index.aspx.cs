@@ -25,28 +25,12 @@ public partial class index : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
+            this.Title = "云南希普防雷工程有限公司";
             strConn = ConfigurationManager.ConnectionStrings["xipuConnectionString"].ToString();
             indexNews = new Index(strConn);
 
             newsList.DataSource = indexNews.GetNewsList();
             newsList.DataBind();
-
-            //try
-            //{
-            //    sqlConnection = new SqlConnection(strConn);
-            //    sqlConnection.Open();
-            //}
-            //catch (Exception ee)
-            //{
-            //}
-            //String sql = "select * from tbl_News order by changeTime desc";
-            //commend = new SqlCommand(sql, sqlConnection);
-            //SqlDataAdapter MyDataAdapter = new SqlDataAdapter(commend);
-            //ds = new DataSet();
-            //MyDataAdapter.Fill(ds);
-
-            //newsList.DataSource = ds;
-            //newsList.DataBind();
 
         }
     }
