@@ -5,7 +5,7 @@ create database xipu;
 use xipu;
 
 create table tbl_Project(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [projectName] varchar(40) not null,
  [projectIntro] text not null,
  [customerType] char(20) null,
@@ -15,7 +15,7 @@ create table tbl_Project(
 );
 
 create table tbl_Certification(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [certiName] varchar(40) not null,
  [certiIntro] text null,
  [imagePath] varchar(128) not null,
@@ -24,7 +24,7 @@ create table tbl_Certification(
 );
 
 create table tbl_Documentation(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [doName] varchar(40) not null,
  [doNumber] varchar(20) not null,
  [doType] varchar(20) not null,
@@ -35,7 +35,7 @@ create table tbl_Documentation(
 );
 
 create table tbl_CustomerMessage(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [Name] char(20) not null,
  [Email] varchar(50) not null,
  [Tel] varchar(20) null,
@@ -46,7 +46,7 @@ create table tbl_CustomerMessage(
 );
 
 create table tbl_CompanyIntro(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [imagePath] varchar(128) not null,
  [introduction] text not null,
  [business] text not null,
@@ -57,7 +57,7 @@ create table tbl_CompanyIntro(
 );
 
 create table tbl_Manager_Culture_Structure(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [imagePath] varchar(128) not null,
  [introduction] text not null,
  [mark] int not null,
@@ -66,14 +66,14 @@ create table tbl_Manager_Culture_Structure(
 );
 
 create table tbl_MarketingImage(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [imagePath] varchar(128) not null,
  [addTime] datetime not null,
  primary key(ID)
 );
 
 create table tbl_SalesDepartment(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [area] varchar(20) not null,
  [departmentName] varchar(40) not null,
  [address] varchar(255) not null,
@@ -82,7 +82,7 @@ create table tbl_SalesDepartment(
 );
 
 create table tbl_Customer(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [customerName] varchar(40) not null,
  [introduction] text not null,
  [address] varchar(255) not null,
@@ -93,7 +93,7 @@ create table tbl_Customer(
 );
 
 create table tbl_News(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [title] varchar(128) not null,
  [newsType] varchar(40) not null,
  [content] text not null,
@@ -105,7 +105,7 @@ create table tbl_News(
 );
 
 create table tbl_Employment(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [title] varchar(128) not null,
  [department] varchar(40) not null,
  [content] text not null,
@@ -116,7 +116,7 @@ create table tbl_Employment(
 );
 
 create table tbl_Admin(
- [ID] int not null,
+ [ID] int identity(1,1) not null,
  [account] varchar(40) not null,
  [password] varchar(40) not null,
  [email] varchar(50) not null,
