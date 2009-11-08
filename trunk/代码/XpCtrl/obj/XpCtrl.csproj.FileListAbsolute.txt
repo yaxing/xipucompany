@@ -1,7 +1,0 @@
-E:\希普\希普网站\希普官网\XpCtrl\obj\Debug\ResolveAssemblyReference.cache
-E:\希普\希普网站\希普官网\XpCtrl\bin\Debug\XpCtrl.dll
-E:\希普\希普网站\希普官网\XpCtrl\bin\Debug\XpCtrl.pdb
-E:\希普\希普网站\希普官网\XpCtrl\bin\Debug\DbConnect.dll
-E:\希普\希普网站\希普官网\XpCtrl\bin\Debug\DbConnect.pdb
-E:\希普\希普网站\希普官网\XpCtrl\obj\Debug\XpCtrl.dll
-E:\希普\希普网站\希普官网\XpCtrl\obj\Debug\XpCtrl.pdb
