@@ -55,7 +55,7 @@ namespace XpCtrl
             DataSet ret = null;
             try
             {
-                string sql = "select ID, title, newsType, content, author, addTime, changeTime, clickNum from tbl_News where newsType=" + newsType;
+                string sql = "select ID, title, newsType, content, author, addTime, changeTime, clickNum from tbl_News where newsType = '" + newsType + '\'';
                 ret = conn.executeQuery(sql);
             }
             catch (System.Exception e)
