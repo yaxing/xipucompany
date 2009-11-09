@@ -55,13 +55,22 @@ namespace XpCtrl
             DataSet ret = null;
             try
             {
-                string sql = "select ID, title, newsType, content, author, addTime, changeTime, clickNum from tbl_News where newsType = '" + newsType + '\'';
+                string sql = "select ID, title, newsType, content, author, addTime, changeTime, clickNum from tbl_News where newsType = '" + newsType+'\'';
                 ret = conn.executeQuery(sql);
             }
             catch (System.Exception e)
             {
                 ret = null;
             }
+            return ret;
+        }
+
+        /*功能：获取一条新闻的信息
+         参数：newsId   新闻的索引号
+        返回值：标记新闻的所有信息。形式即为表的结构*/
+        public DataSet GetNewsInfo(int iNewsId)
+        {
+            DataSet ret = conn.executeQuery("select * from tbl_News where ID = '" + iNewsId + "'");
             return ret;
         }
     }
