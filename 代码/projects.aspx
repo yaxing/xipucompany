@@ -26,7 +26,7 @@
         <asp:Repeater ID="projectsList" runat="server">
             <ItemTemplate>
                 <div id="news">
-                    <a href="#">
+                    <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
                         <p>
                             <%#Eval("projectName") %>
                         </p>
