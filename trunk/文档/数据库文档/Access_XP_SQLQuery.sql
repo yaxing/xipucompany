@@ -94,7 +94,7 @@ create table tbl_News(
  [author] varchar(40) null,
  [addTime] datetime not null,
  [changeTime] datetime not null,
- [clickNum] bigint not null,
+ [clickNum] int not null,
  primary key(ID)
 );
 
@@ -105,7 +105,7 @@ create table tbl_Employment(
  [content] text not null,
  [author] varchar(40) null,
  [addTime] datetime not null,
- [changeTime] datetime not null
+ [changeTime] datetime not null,
  primary key(ID)
 );
 
