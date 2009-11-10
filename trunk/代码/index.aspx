@@ -28,7 +28,7 @@
                     <a href="./news_example.html">
                         <table>
                         <tr>
-                        <td style="width:240px">
+                        <td style="width:220px">
                             <%#Eval("title")%></font>
                         </td>
                         <td>
