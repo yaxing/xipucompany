@@ -12,14 +12,14 @@
     <!--<h3>TESTIMONIALS</h3> 
 			<p class="testimonial" align="center">工程展示</p> -->
     <ul>
-        <a href="./projectType.aspx?proType=0" target="_self">
-            <li id="news" align="left">政府机关单位</li></a><a href="./projectType.aspx?proType=1"
-                target="_self"><li id="news" align="left">公安系统</li></a><a href="./projectType.aspx?proType=2"
-                    target="_self"><li id="news" align="left">房地产住宅区</li></a><a href="./projectType.aspx?proType=3"
-                        target="_self"><li id="news" align="left">企、事业单位</li></a><a href="./projectType.aspx?proType=4"
-                            target="_self"><li id="news" align="left">公路收费站</li></a><a href="./projectType.aspx?proType=5"
-                                target="_self"><li id="news" align="left">石化系统</li></a><a href="./projectType.aspx?proType=6"
-                                    target="_self"><li id="news" align="left">金融系统</li></a></ul>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=0" target="_self">政府机关单位</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=1" target="_self">公安系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=2" target="_self">房地产住宅区</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=3" target="_self">企、事业单位</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=4" target="_self">公路收费站</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=5" target="_self">石化系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">金融系统</a></li>
+    </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
     <div class="Ctopright">

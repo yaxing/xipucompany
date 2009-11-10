@@ -8,11 +8,12 @@
         &nbsp;</p>
     <!--<h3>TESTIMONIALS</h3>  -->
     <ul>
-        <a href="./projects.aspx" target="_self">
-            <li id="news" align="left">工程展示</li></a><a href="./certification.aspx" target="_self"><li
-                id="news" align="left">资质证明</li></a><a href="./tecSupport.aspx" target="_self"><li
-                    id="news" align="left">技术支持</li></a><a href="./bbs.aspx" target="_self"><li id="news"
-                        align="left">客户留言</li></a></ul>
+        
+            <li id="news" align="left"><a href="./projects.aspx" target="_self">工程展示</a></li>
+            <li id="news" align="left"><a href="./certification.aspx" target="_self">资质证明</a></li>
+            <li id="news" align="left"><a href="./tecSupport.aspx" target="_self">技术支持</a></li>
+            <li id="news" align="left"><a href="./bbs.aspx" target="_self">客户留言</a></li>
+   </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
     <div class="Ctopright">
@@ -25,18 +26,20 @@
             </HeaderTemplate>
             <ItemTemplate>
                 <div id="news">
-                    <a href="./news_example.html">
+                    
                         <table>
                         <tr>
                         <td style="width:220px">
-                            <%#Eval("title")%></font>
+                        <a href="newsinfo.aspx?newsID=<%#Eval("ID") %>">
+                            <%#Eval("title")%>
+                        </a>
                         </td>
                         <td>
                         <font style="font-family:微软雅黑; color:Gray; font-size:10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
                         </td>
                         </tr>
                         </table>
-                    </a>
+                    
                     <p>
                         <%#Eval("content").ToString().Substring(0,2) %>...
                     </p>
@@ -44,7 +47,7 @@
             </ItemTemplate>
             <FooterTemplate>
              <p align="right">
-             <a href=""><font style="font-family:黑体; font-size:10px">更多...</font></a>
+             <a href="news.aspx"><font style="font-family:黑体; font-size:10px">更多...</font></a>
              </p>
             </FooterTemplate>
         </asp:Repeater>
