@@ -26,16 +26,26 @@
             <ItemTemplate>
                 <div id="news">
                     <a href="./news_example.html">
-                        <p>
-                            <%#Eval("title")%>
-                        </p>
+                        <table>
+                        <tr>
+                        <td style="width:240px">
+                            <%#Eval("title")%></font>
+                        </td>
+                        <td>
+                        <font style="font-family:微软雅黑; color:Gray; font-size:10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
+                        </td>
+                        </tr>
+                        </table>
                     </a>
                     <p>
-                        <%#Eval("content").ToString().Substring(0,2) %>
+                        <%#Eval("content").ToString().Substring(0,2) %>...
                     </p>
                 </div>
             </ItemTemplate>
             <FooterTemplate>
+             <p align="right">
+             <a href=""><font style="font-family:黑体; font-size:10px">更多...</font></a>
+             </p>
             </FooterTemplate>
         </asp:Repeater>
     </div>

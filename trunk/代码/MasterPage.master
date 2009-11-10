@@ -19,9 +19,12 @@
         <div id="daddy">
             <div id="header">
                 <div id="logo">
-                    <a href="./">
-                        <img src="images/logo.gif" alt="Your Company Logo" width="318" height="85" /></a><span
-                            id="logo-text"><a href="./">希普防雷公司</a></span></div>
+                    <a href="./index.aspx">
+                        <img src="images/logo.gif" alt="" style="height:85px; width:280px" /></a><span
+                            id="logo-text">
+                         <a href="./index.aspx"><font style="font-size:18px"><strong>云南希普防雷工程有限公司</strong></font></a>
+                         </span>
+                         </div>
                 <!-- logo -->
                 <div id="menu">
                     <ul>
@@ -56,7 +59,7 @@
             </div>
             <!-- header -->
             <div id="content">
-                <div id="cA">
+                <div id="cA" style="height:500px">
                     <div class="Ctopleft">
                     </div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">

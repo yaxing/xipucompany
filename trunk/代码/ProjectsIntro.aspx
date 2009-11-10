@@ -7,13 +7,13 @@
     <p>
         &nbsp;</p>
     <ul>
-        <a href="./pro_government.html" target="_self">
-            <li id="news" align="left">政府机关单位</li></a> <a href="./projects.html" target="_self">
-                <li id="news" align="left">公安系统</li></a> <a href="./projects.html" target="_self">
-                    <li id="news" align="left">房地产住宅区</li></a> <a href="./projects.html" target="_self">
-                        <li id="news" align="left">企、事业单位</li></a> <a href="./projects.html" target="_self">
-                            <li id="news" align="left">公路收费站</li></a> <a href="./projects.html" target="_self">
-                                <li id="news" align="left">石化系统</li></a> <a href="./projects.html" target="_self">
+        <a href="./projectType.aspx?proType=0" target="_self">
+            <li id="news" align="left">政府机关单位</li></a> <a href="./projectType.aspx?proType=1" target="_self">
+                <li id="news" align="left">公安系统</li></a> <a href="./projectType.aspx?proType=2" target="_self">
+                    <li id="news" align="left">房地产住宅区</li></a> <a href="./projectType.aspx?proType=3" target="_self">
+                        <li id="news" align="left">企、事业单位</li></a> <a href="./projectType.aspx?proType=4" target="_self">
+                            <li id="news" align="left">公路收费站</li></a> <a href="./projectType.aspx?proType=5" target="_self">
+                                <li id="news" align="left">石化系统</li></a> <a href="./projectType.aspx?proType=6" target="_self">
                                     <li id="news" align="left">金融系统</li></a>
     </ul>
 </asp:Content>
