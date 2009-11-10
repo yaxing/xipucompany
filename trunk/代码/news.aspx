@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="news.aspx.cs" Inherits="news" Title="无标题页" %>
+    CodeFile="news.aspx.cs" Inherits="news" Title="新闻中心" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h3>
@@ -34,7 +34,8 @@
                         <div id="news">
                             <a href="./news_example.html">
                                 <p>
-                                    <%#Eval("title")%>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True"
+                                         NavigateUrl='<%# "newsinfo.aspx?newsID="+Eval("ID") %>'><%#Eval("title") %></asp:HyperLink>
                                 </p>
                             </a>
                             <p>
