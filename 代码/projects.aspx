@@ -7,13 +7,13 @@
     <p>
         &nbsp;</p>
     <ul>
-        <a href="./pro_government.html" target="_self">
-            <li id="news" align="left">政府机关单位</li></a> <a href="./projects.html" target="_self">
-                <li id="news" align="left">公安系统</li></a> <a href="./projects.html" target="_self">
-                    <li id="news" align="left">房地产住宅区</li></a> <a href="./projects.html" target="_self">
-                        <li id="news" align="left">企、事业单位</li></a> <a href="./projects.html" target="_self">
-                            <li id="news" align="left">公路收费站</li></a> <a href="./projects.html" target="_self">
-                                <li id="news" align="left">石化系统</li></a> <a href="./projects.html" target="_self">
+        <a href="./projectType.aspx?proType=0" target="_self">
+            <li id="news" align="left">政府机关单位</li></a> <a href="./projectType.aspx?proType=1" target="_self">
+                <li id="news" align="left">公安系统</li></a> <a href="./projectType.aspx?proType=2" target="_self">
+                    <li id="news" align="left">房地产住宅区</li></a> <a href="./projectType.aspx?proType=3" target="_self">
+                        <li id="news" align="left">企、事业单位</li></a> <a href="./projectType.aspx?proType=4" target="_self">
+                            <li id="news" align="left">公路收费站</li></a> <a href="./projectType.aspx?proType=5" target="_self">
+                                <li id="news" align="left">石化系统</li></a> <a href="./projectType.aspx?proType=6" target="_self">
                                     <li id="news" align="left">金融系统</li></a>
     </ul>
 </asp:Content>
@@ -43,21 +43,21 @@
         <h3>
             <font style="font-family: '微软雅黑'; font-size: 16px">图片展示</font></h3>
         <div align="center">
-            <marquee style="height: 450px" onmouseover="stop()" onmouseout="start()" direction="down"
+            <marquee style="height: 450px" onmouseover="stop()" onmouseout="start()" direction="up"
                 height="200" scrollamount="4" scrolldelay="90" behavior="scroll" width="100%">
                 <asp:Repeater ID="projectImages" runat="server">
                     <ItemTemplate>
                         <table>
                             <tr>
                                 <td align="center">
-                                    <a href="">
+                                    <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
                                         <%#Eval("projectName") %>
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="">
+                                    <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
                                         <img border="0" src="<%#Eval("imagePath") %>"></a>
                                 </td>
                             </tr>
