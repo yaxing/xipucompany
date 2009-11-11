@@ -108,8 +108,11 @@ create table tbl_Employment(
  [ID] int identity(1,1) not null,
  [title] varchar(128) not null,
  [department] varchar(40) not null,
+ [position] varchar(40) not null,
+ [salary] varchar(40) not null,
  [content] text not null,
  [author] varchar(40) null,
+ [contact] varchar(40) not null,
  [addTime] datetime not null,
  [changeTime] datetime not null
  primary key(ID)
