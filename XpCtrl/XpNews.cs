@@ -73,5 +73,21 @@ namespace XpCtrl
             DataSet ret = conn.executeQuery("select * from tbl_News where ID = '" + iNewsId + "'");
             return ret;
         }
+
+        /*功能：给一条新闻的点击量加1
+         参数：newsId   新闻的索引号
+        返回值：无*/
+        public Boolean AddNewsClick(int iNewsId)
+        {
+            String sqlcmd = "Update tbl_News set clickNum = clickNum+1 where ID = " + iNewsId;
+            if (conn.executeUpdate(sqlcmd) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
