@@ -62,5 +62,21 @@ namespace XpCtrl
             }
             return ret;
         }
+
+        /*功能：获取客户信息
+         返回值：返回客户信息表集合*/
+        public DataSet GetCustomerInfo()
+        {
+            DataSet ret = null;
+            try
+            {
+                ret = conn.executeQuery("select * from tbl_Customer");
+            }
+            catch (Exception e)
+            {
+                ret = null;
+            }
+            return ret;
+        }
     }
 }

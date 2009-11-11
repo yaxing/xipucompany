@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="sales.aspx.cs" Inherits="sales" Title="无标题页" %>
+    CodeFile="customer.aspx.cs" Inherits="customer" Title="无标题页" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h3>
@@ -15,21 +15,16 @@
     <div id="main">
         <div id="letter">
             <img src="./images/arrow_0.gif" width="11" height="12" />
-            <span><strong>营业部</strong></span>
+            <span><strong>客户</strong></span>
         </div>
-        <div id="cA img">
-            <asp:Image ID="SalesImage" runat="server" ImageUrl='<%#Eval("imagePath") %>' Width="438"
-                Height="339" />
-        </div>
-        <span><strong>各营业部联系方式</strong></span>
-        <asp:GridView ID="SalesGridView" runat="server" CellPadding="4" ForeColor="#333333"
-            Width="80%" GridLines="None" AutoGenerateColumns="False" AllowPaging="true" OnPageIndexChanging="SalesGridView_PageIndexChanging">
+        <span><strong>客户联系方式</strong></span>
+        <asp:GridView ID="CustomerGridView" runat="server" CellPadding="4" ForeColor="#333333"
+            Width="80%" GridLines="None" AutoGenerateColumns="False" AllowPaging="true" OnPageIndexChanging="CustomerGridView_PageIndexChanging">
             <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
             <Columns>
-                <asp:BoundField DataField="area" HeaderText="地区" />
-                <asp:BoundField DataField="departmentName" HeaderText="名称" />
+                <asp:BoundField DataField="customerName" HeaderText="名称" />
                 <asp:BoundField DataField="address" HeaderText="地址" />
-                <asp:BoundField DataField="tel" HeaderText="联系方式" />
+                <asp:BoundField DataField="contact" HeaderText="联系方式" />
             </Columns>
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="#ffffff" ForeColor="#000000" HorizontalAlign="Center" />
