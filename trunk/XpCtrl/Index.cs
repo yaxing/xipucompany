@@ -25,7 +25,7 @@ namespace XpCtrl
             DataSet ret = null;
             try
             {
-                ret = conn.executeQuery("select * from tbl_News order by changeTime desc");
+                ret = conn.executeQuery("select top 8 * from tbl_News order by changeTime desc");
             }
             catch (Exception e)
             {
