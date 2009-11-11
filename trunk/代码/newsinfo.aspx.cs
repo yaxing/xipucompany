@@ -29,7 +29,9 @@ public partial class newsinfo : System.Web.UI.Page
                 Response.Write("<script language='javascript'>alert('错误的新闻索引值');location.href('news.aspx')</script>");
             }
         }
+        Add_Click_Num();
     }
+
     protected void PageInfo_Load()
     {
         int newsID = Convert.ToInt32(Request.QueryString["newsID"]);
@@ -41,5 +43,12 @@ public partial class newsinfo : System.Web.UI.Page
         this.authorLB.Text = ds.Tables[0].Rows[0][4].ToString();
         this.changeDateLB.Text = ds.Tables[0].Rows[0][6].ToString();
         this.clickNumLB.Text = ds.Tables[0].Rows[0][7].ToString();
+    }
+
+    protected void Add_Click_Num()
+    {
+        int newsID = Convert.ToInt32(Request.QueryString["newsID"]);
+        XpNews newsInfo = new XpNews(strDbConn);
+        newsInfo.AddNewsClick(newsID);
     }
 }

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="sales.aspx.cs" Inherits="sales" Title="无标题页" %>
+    CodeFile="sales.aspx.cs" Inherits="sales" Title="营销网络" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h3>
