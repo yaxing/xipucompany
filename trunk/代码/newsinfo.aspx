@@ -19,7 +19,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
-    <div id="main">
+    <div id="cB">
         <div id="banner">
             <img src="./images/banner.jpg" border="0"></div>
         <div id="news-title">
@@ -31,7 +31,7 @@
             <div id="article">
                 <div>
                     <asp:Literal ID="newsContentLT" runat="server"></asp:Literal>
-                    <div id="author">
+                    <div id8="author">
                         <asp:Label ID="authorLB" runat="server" Text="Label"></asp:Label>@<asp:Label ID="changeDateLB" runat="server" Text="Label"></asp:Label>
                     </div>
                     <div id="show">
