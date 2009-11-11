@@ -1,0 +1,35 @@
+/* Variable Klassen */
+
+* {
+	text-align:left;
+}
+
+body {
+	text-align:center;
+}
+
+.contentbox {
+	border:1px solid #ebebeb;
+	color:#868686;
+	float:left;
+	margin:18px 4px 0 0;
+	padding:5px;
+	width:126px;
+}
+
+.contentbox h2 {
+	height:15px;
+	width:116px;
+}
+
+#footer {
+	height:15px;
+}
+
+#header {
+	height:187px;
+}
+
+#menu li a {
+	height:23px;
+}
