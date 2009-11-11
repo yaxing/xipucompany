@@ -18,7 +18,7 @@
         <li id="news" align="left"><a href="./projectType.aspx?proType=3" target="_self">企、事业单位</a></li>
         <li id="news" align="left"><a href="./projectType.aspx?proType=4" target="_self">公路收费站</a></li>
         <li id="news" align="left"><a href="./projectType.aspx?proType=5" target="_self">石化系统</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">金融系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">其他</a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
