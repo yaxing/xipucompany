@@ -86,3 +86,47 @@ values ('乌鲁木齐', '乌鲁木齐营业部', '乌鲁木齐市天山区文艺路233号宏源大厦13楼',
 insert into tbl_SalesDepartment (area, departmentName, [address], tel)
 values ('杭州', '杭州营业部', '浙江杭州市华浙广场1号18楼', '0571-85279700');
 
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
+
+insert into tbl_Customer (CustomerName, introduction, [address], contact, imagePath, addtime)
+values ('北京安顺建筑公司', '客户', '北京市海淀区海淀北一街2号首创拓展大厦406室', '0571-85279700', './customer/coutomer_image_01.jpg', getdate());
