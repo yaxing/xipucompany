@@ -12,8 +12,9 @@
     <div id="search">
         <form>
         查找:
-        <input type="text" class="text">
-        <input type="button" value="搜" class="btn">
+        <asp:TextBox ID="SearchTB" runat="server"></asp:TextBox>
+        <asp:Button ID="SearchBT" runat="server" Text="搜" Height="25px" Width="25px" 
+            onclick="SearchBT_Click" />
         </form>
     </div>
 </asp:Content>
@@ -22,6 +23,7 @@
         <h3>
             <font style="font-family: '微软雅黑'; font-size: 16px">新闻中心</font>
         </h3>
+        
         <asp:GridView ID="xpNewsList" runat="server" AllowPaging="True" AutoGenerateColumns="False"
             Width="100%" OnPageIndexChanging="xpNewsList_PageIndexChanging" BorderWidth="0px">
             <Columns>
@@ -51,6 +53,11 @@
                 </asp:TemplateField>
             </Columns>
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+            <EmptyDataTemplate>
+                <p style="text-align: center;">
+                  新闻列表为空
+                </p>
+            </EmptyDataTemplate>
             <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
     </div>

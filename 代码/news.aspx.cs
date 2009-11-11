@@ -66,4 +66,20 @@ public partial class news : System.Web.UI.Page
             xpNewsList.DataBind();
         }
     }
+    protected void SearchBT_Click(object sender, EventArgs e)
+    {
+        string strDbConn = ConfigurationManager.ConnectionStrings["xipuConnectionString"].ToString();
+        xpnews = new XpNews(strDbConn);
+        String searchC = this.SearchTB.Text.Trim();
+        string[] keyWords = searchC.Split(' ');
+        if (searchC.Equals(null))
+        {
+            Response.Write("<script>alert('您还没有输入搜索条件！');</script>");
+            return;
+        }
+        DataSet ds = xpnews.SearchNews(keyWords);
+       
+        xpNewsList.DataSource = ds;
+        xpNewsList.DataBind();
+    }
 }
