@@ -56,15 +56,6 @@ create table tbl_CompanyIntro(
  primary key(ID)
 );
 
-create table tbl_Manager_Culture_Structure(
- [ID] int identity(1,1) not null,
- [imagePath] varchar(128) not null,
- [introduction] text not null,
- [mark] int not null,
- [addTime] datetime not null,
- primary key(ID)
-);
-
 create table tbl_MarketingImage(
  [ID] int identity(1,1) not null,
  [imagePath] varchar(128) not null,
@@ -84,9 +75,9 @@ create table tbl_SalesDepartment(
 create table tbl_Customer(
  [ID] int identity(1,1) not null,
  [customerName] varchar(40) not null,
- [introduction] text not null,
- [address] varchar(255) not null,
- [contact] varchar(255) not null,
+ [introduction] text,
+ [address] varchar(255),
+ [contact] varchar(255),
  [imagePath] varchar(128) not null,
  [addTime] datetime not null,
  primary key(ID)
