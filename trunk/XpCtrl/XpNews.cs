@@ -89,5 +89,30 @@ namespace XpCtrl
                 return false;
             }
         }
+
+        /*功能： 根据strKeyWords数组查询图书
+          返回值：查询到的图书详细信息*/
+        public DataSet SearchNews(string[] strKeyWords)
+        {
+            DataSet ret = null;
+            try
+            {
+                string sql = "select * from tbl_News where ";
+                bool bFirst = true;
+                foreach (string str in strKeyWords)
+                {
+                    if (!bFirst)
+                        sql = sql + " or ";
+                    sql = sql + "title like '%" + str + "%'";
+                    bFirst = false;
+                }
+                ret = conn.executeQuery(sql);
+            }
+            catch (System.Exception e)
+            {
+                ret = null;
+            }
+            return ret;
+        }
     }
 }
