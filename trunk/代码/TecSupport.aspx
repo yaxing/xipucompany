@@ -16,6 +16,8 @@
     <li id="news" align="left">参数解释</li></a>
     <a href="TecClassify.aspx?Type=4" target="_self">
     <li id="news" align="left">典型应用</li></a>
+    <a href="TecClassify.aspx?Type=4" target="_self">
+    <li id="news" align="left">其他</li></a>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" Runat="Server">
