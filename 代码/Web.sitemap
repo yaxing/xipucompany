@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/index.aspx" title="主页"  description="">
+      <siteMapNode url="~/projects.aspx" title="工程展示"  description="">
+        <siteMapNode url="~/projectType.aspx" title="客户分类">
+          <siteMapNode url="ProjectsIntro.aspx" title="工程简介"></siteMapNode>
+        </siteMapNode>
+      </siteMapNode>
+        <siteMapNode url="~/certification.aspx" title="资质证明"  description="" />
+        <siteMapNode url="~/tecSupport.aspx" title="技术支持"  description="" />
+        <siteMapNode url="~/bbs.aspx" title="客户留言"  description="" />
+      <siteMapNode url="situation.aspx" title="关于我们">
+        
+      </siteMapNode>
+      <siteMapNode url="sales.aspx" title="营销网络">
+        <siteMapNode url="customer.aspx" title="客户列表"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="news.aspx" title="新闻中心">
+        <siteMapNode url="news.aspx?newstype=1" title="内部新闻">
+        </siteMapNode>
+        <siteMapNode url="news.aspx?newstype=2" title="业界新闻">
+        </siteMapNode>
+        <siteMapNode url="newsinfo.aspx" title="详细新闻"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="humanResource.aspx" title="人才招聘">
+        <siteMapNode url="jobDetail.aspx" title="详细招聘信息"></siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="contact.aspx" title="联系我们"></siteMapNode>
+    </siteMapNode>
+</siteMap>
