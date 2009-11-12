@@ -20,11 +20,10 @@
             <div id="header">
                 <div id="logo">
                     <a href="./index.aspx">
-                        <img src="images/logo.gif" alt="" style="height:85px; width:280px" /></a><span
-                            id="logo-text">
-                         <a href="./index.aspx"><font style="font-size:18px"><strong>云南希普防雷工程有限公司</strong></font></a>
-                         </span>
-                         </div>
+                        <img src="images/logo.gif" alt="" style="height: 85px; width: 280px" /></a><span
+                            id="logo-text"> <a href="./index.aspx"><font style="font-size: 18px"><strong>云南希普防雷工程有限公司</strong></font></a>
+                        </span>
+                </div>
                 <!-- logo -->
                 <div id="menu">
                     <ul>
@@ -42,16 +41,22 @@
                 </div>
                 <!-- ticker -->
                 <div id="headerimage">
-                    <!--<div id="download"><span id="download-text"><a href="http://www.symisun.com/index.php?dl_id=1">download this amazing<br />CSS template for FREE!</a></span></div><!-- download -->
                     <div id="icons">
                         <a href="./index.aspx" title="公司主页">
-                            <img src="images/icon_home.gif" alt="Home" width="13" height="13" id="home" /></a>
+                            <img src="images/icon_home.gif" alt="公司主页" width="13" height="13" id="home" /></a>
                         <a href="./sales.aspx" title="营销网络">
-                            <img src="images/icon_sitemap.gif" alt="Sitemap" width="13" height="13" id="sitemap" /></a>
+                            <img src="images/icon_sitemap.gif" alt="营销网络" width="13" height="13" id="sitemap" /></a>
                         <a href="./contact.aspx" title="联系我们">
-                            <img src="images/icon_contact.gif" alt="Contact" width="13" height="13" id="contact" /></a>
+                            <img src="images/icon_contact.gif" alt="联系我们" width="13" height="13" id="contact" /></a>
                     </div>
                     <!-- icons -->
+                    <div style="position: relative; left: 55px; top: 195px">
+                        <asp:SiteMapPath ID="SiteMapPath" runat="server">
+                            <NodeStyle BackColor="Transparent" ForeColor="#003333" Font-Bold="False" />
+                            <RootNodeStyle ForeColor="#003333" Font-Bold="True" />
+                            <CurrentNodeStyle ForeColor="#003399" />
+                        </asp:SiteMapPath>
+                    </div>
                     <div id="slogan">
                         <font style="color: #003333; font-family: '微软雅黑'"><strong>和谐 进取 责任 绩效</strong></font></div>
                 </div>
@@ -59,7 +64,7 @@
             </div>
             <!-- header -->
             <div id="content">
-                <div id="cA" style="height:500px">
+                <div id="cA" style="height: 500px">
                     <div class="Ctopleft">
                     </div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
@@ -70,7 +75,7 @@
                     <div class="Ctopright">
                     </div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-                        </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder>
                 </div>
                 <!-- cB -->
                 <div class="Cpad">
