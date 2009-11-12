@@ -13,25 +13,50 @@
     <div class="Ctopright">
     </div>
     <div id="main">
-        <div id="letter">
-            <img src="./images/arrow_0.gif" width="11" height="12" />
-            <span><strong>客户</strong></span>
-        </div>
-        <span><strong>客户联系方式</strong></span>
-        <asp:GridView ID="CustomerGridView" runat="server" CellPadding="4" ForeColor="#333333"
-            Width="80%" GridLines="None" AutoGenerateColumns="False" AllowPaging="true" OnPageIndexChanging="CustomerGridView_PageIndexChanging">
-            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-            <Columns>
-                <asp:BoundField DataField="customerName" HeaderText="名称" />
-                <asp:BoundField DataField="address" HeaderText="地址" />
-                <asp:BoundField DataField="contact" HeaderText="联系方式" />
-            </Columns>
-            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#ffffff" ForeColor="#000000" HorizontalAlign="Center" />
-            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-            <HeaderStyle BackColor="#e9f2fa" Font-Bold="True" ForeColor="#284775" />
-            <EditRowStyle BackColor="#999999" />
-            <AlternatingRowStyle BackColor="#e9f2fa" ForeColor="#284775" />
-        </asp:GridView>
+        <table>
+            <tr style="height: 15px">
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/arrow_0.gif" width="11" height="12" />
+                </td>
+                <td>
+                    <strong>客户</strong>
+                </td>
+            </tr>
+        </table>
+        <table id="mytable">
+            <tr>
+                <td style="width: 50px">
+                </td>
+                <td>
+                    <strong>客户联系方式:</strong>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50px">
+                </td>
+                <td>
+                    <asp:GridView ID="CustomerGridView" runat="server" CellPadding="4" ForeColor="#333333"
+                        Width="100%" GridLines="None" AutoGenerateColumns="False" 
+                        AllowPaging="True" OnPageIndexChanging="CustomerGridView_PageIndexChanging">
+                        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <Columns>
+                            <asp:BoundField DataField="customerName" HeaderText="名称" />
+                            <asp:BoundField DataField="address" HeaderText="地址" />
+                            <asp:BoundField DataField="contact" HeaderText="联系方式" >
+                                <ItemStyle Width="25%" />
+                            </asp:BoundField>
+                        </Columns>
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#ffffff" ForeColor="#000000" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                        <HeaderStyle BackColor="#e9f2fa" Font-Bold="True" ForeColor="#284775" />
+                        <EditRowStyle BackColor="#999999" />
+                        <AlternatingRowStyle BackColor="#e9f2fa" ForeColor="#284775" />
+                    </asp:GridView>
+                </td>
+            </tr>
+        </table>
     </div>
 </asp:Content>
