@@ -34,7 +34,7 @@
                             <%#Eval("title")%>
                         </a>
                         </td>
-                        <td>
+                        <td style="width:150px">
                         <font style="font-family:微软雅黑; color:Gray; font-size:10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
                         </td>
                         </tr>
