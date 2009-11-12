@@ -60,10 +60,13 @@ public partial class projectType : System.Web.UI.Page
         DataSet ds = pro.GetProjectsType(proType);
 
         proList.AllowPaging = true;
-        proList.PageSize = 5;
+        proList.PageSize = 10;
 
         proList.DataSource = ds;
         proList.DataBind();
+
+        projectImages.DataSource = ds;
+        projectImages.DataBind();
     }
 
     protected void proList_PageIndexChanging(object sender, GridViewPageEventArgs e)

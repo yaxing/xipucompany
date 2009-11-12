@@ -23,13 +23,23 @@
 			<div id="cB1">
 				<h3><font style="font-family:'微软雅黑'; font-size:16px">工程简介————<%#Eval("projectName") %></font></h3>
 				<p>&nbsp;</p>
-			    <p>
-			    <%#Eval("projectIntro") %>
-			    </p>				
+				<table>
+			    <tr>
+			    <td style="width:100px"></td>
+			    <td></td>
+			    </tr>
+			    <tr>
+			    <td></td>
+			    <td>
+			    <font style="font-size:15px"><%#Eval("projectIntro") %></font>
+			    </td>
+			    </tr>
+			    </table>				
 			</div><!-- cB1 -->
 			
 			<div id="cB2">
 			 <h3><font style="font-family:'微软雅黑'; font-size:16px"></font></h3>
+			 <p style="height:45px"></p>
 			 <img src="<%#Eval("imagePath") %>" alt="" />
 			  <div align="center">
 			  
