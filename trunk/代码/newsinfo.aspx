@@ -9,14 +9,6 @@
             <li id="news" align="left">内部新闻</li></a> <a href="./news.aspx?newstype=2" target="_self">
                 <li id="news" align="left">业界新闻</li></a>
     </ul>
-    <br>
-    <div id="search">
-        <form>
-        查找:
-        <input type="text" class="text">
-        <input type="button" value="搜" class="btn">
-        </form>
-    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
     <div id="cB">
@@ -48,6 +40,9 @@
                     <td>
                         添加时间：<asp:Label ID="changeDateLB" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td>
+                        浏览[<asp:Label ID="clickNumLB" runat="server" Text="Label"></asp:Label>]
+                    </td>
                 </tr>
             </table>
             <table>
@@ -56,13 +51,6 @@
                     </td>
                     <td>
                         <asp:Literal ID="newsContentLT" runat="server"></asp:Literal>
-                    </td>
-                </tr>
-                <tr style="height: 35px">
-                    <td style="width: 50px">
-                    </td>
-                    <td>
-                        浏览[<asp:Label ID="clickNumLB" runat="server" Text="Label"></asp:Label>]
                     </td>
                 </tr>
             </table>

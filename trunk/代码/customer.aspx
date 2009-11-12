@@ -39,7 +39,8 @@
                 <td>
                     <asp:GridView ID="CustomerGridView" runat="server" CellPadding="4" ForeColor="#333333"
                         Width="100%" GridLines="None" AutoGenerateColumns="False" 
-                        AllowPaging="True" OnPageIndexChanging="CustomerGridView_PageIndexChanging">
+                        AllowPaging="True" OnPageIndexChanging="CustomerGridView_PageIndexChanging" OnRowCreated="CustomerGridView_RowCreated" PageSize="8">
+                        <PagerSettings PageButtonCount="3" />
                         <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                         <Columns>
                             <asp:BoundField DataField="customerName" HeaderText="名称" />
