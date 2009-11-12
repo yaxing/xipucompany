@@ -8,15 +8,11 @@
 	<p>&nbsp;</p>
 	<!--<h3>TESTIMONIALS</h3>  -->
 	<ul>
-	<a href="#" target="_self">
-	<li id="Li1" align="left">工程展示</li></a>
-	<a href="#" target="_self">
-	<li id="Li2" align="left">资质证明</li></a>
-	<a href="#" target="_self">
-	<li id="Li3" align="left">技术支持</li></a>
-	<a href="#" target="_self">
-	<li id="Li4" align="left">客户留言</li></a>
-	</ul>
+        <li id="news" align="left"><a href="./projects.aspx" target="_self">工程展示</a></li>
+        <li id="news" align="left"><a href="./certification.aspx" target="_self">资质证明</a></li>
+        <li id="news" align="left"><a href="./tecSupport.aspx" target="_self">技术支持</a></li>
+        <li id="news" align="left"><a href="./bbs.aspx" target="_self">客户留言</a></li>
+    </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" Runat="Server">       
      <div id="cB1">
