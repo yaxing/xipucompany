@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Configuration;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.HtmlControls;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
 using XpCtrl;
 
 public partial class download : System.Web.UI.Page
@@ -19,9 +10,28 @@ public partial class download : System.Web.UI.Page
     {
         int id = Convert.ToInt32(Request.QueryString["ID"]);
         DataSet ds = getDS(id);
-        
 
-        FileInfo download = new FileInfo(Request.PhysicalApplicationPath + "/Uploaded/" + ds.Tables[0].Rows[0]["doName"]);
+        string path = Request.PhysicalApplicationPath + "/Uploaded/";
+        switch(Convert.ToInt32(ds.Tables[0].Rows[0]["doType"]))
+        {
+            case 1:
+                path += "技术规范/";
+                break;
+            case 2:
+                path += "安装技术/";
+                break;
+            case 3:
+                path += "参数解释/";
+                break;
+            case 4:
+                path += "典型应用/";
+                break;
+            case 5:
+                path += "其他/";
+                break;
+        }
+
+        FileInfo download = new FileInfo( path + ds.Tables[0].Rows[0]["doName"]);
 
         if (download.Exists)
         {
@@ -40,6 +50,7 @@ public partial class download : System.Web.UI.Page
         else
         {
             //文档不存在
+            Response.Write("<script language='javascript'>alert('可能已被删除，请与管理员联系');history.go(-1);</script>");
         }
     }
 
