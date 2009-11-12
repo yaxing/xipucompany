@@ -56,11 +56,11 @@
         </table>
     </div>
     <!-- cB1 -->
-    <%--<div id="cB2">
+    <div id="cB2">
         <h3>
             <font style="font-family: '微软雅黑'; font-size: 16px">图片展示</font></h3>
         <div align="center">
-            <marquee style="height: 450px" onmouseover="stop()" onmouseout="start()" direction="down"
+            <marquee style="height: 450px" onmouseover="stop()" onmouseout="start()" direction="up"
                 height="200" scrollamount="4" scrolldelay="90" behavior="scroll" width="100%">
                 <asp:Repeater ID="projectImages" runat="server">
                     <ItemTemplate>
@@ -84,6 +84,6 @@
                 </asp:Repeater>
             </marquee>
         </div>
-    </div>--%>
+    </div>
     <!-- cB2 -->
 </asp:Content>

@@ -94,7 +94,7 @@
                 <tr>
                     <td style="width: 150px">
                     </td>
-                    <td>
+                    <td style="width:350px">
                         <font style="font-size: 13px">
                             <%#Eval("content") %>
                         </font>

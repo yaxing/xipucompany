@@ -42,7 +42,7 @@
                                                 <td style="width: 110px">
                                                     部门：<%#Eval("department") %>
                                                 </td>
-                                                <td>
+                                                <td style="width:250px">
                                                     添加时间：<%#Eval("changeTime") %>
                                                 </td>
                                             </tr>

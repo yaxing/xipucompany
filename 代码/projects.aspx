@@ -25,14 +25,29 @@
         <asp:Repeater ID="projectsList" runat="server">
             <ItemTemplate>
                 <div id="news">
-                    <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
-                        <p>
-                            <%#Eval("projectName") %>
-                        </p>
-                    </a>
-                    <p>
-                        <%#Eval("projectIntro").ToString().Substring(0,2) %>
-                    </p>
+                    <table>
+                        <tr style="height:20px"></tr>
+                        <tr>
+                            <td style="width: 5">
+                            </td>
+                            <td style="width: 5">
+                                >></td>
+                            <td>
+                                <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
+                                    <%#Eval("projectName") %>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <%#Eval("projectIntro").ToString().Substring(0,2) %>
+                                ...</td>
+                        </tr>
+                    </table>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
