@@ -31,16 +31,16 @@ insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('昆
 insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('昆明市邦克大厦','昆明市邦克大厦防雷工程','./project_images/1.jpg',getdate());
 
 
-insert into tbl_Documentation values('技术文档1','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档1.txt',getdate());
-insert into tbl_Documentation values('技术文档2','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档2.txt',getdate());
-insert into tbl_Documentation values('技术文档3','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档3.txt',getdate());
-insert into tbl_Documentation values('技术文档4','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档4.txt',getdate());
-insert into tbl_Documentation values('技术文档5','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档5.txt',getdate());
-insert into tbl_Documentation values('技术文档6','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档6.txt',getdate());
-insert into tbl_Documentation values('技术文档7','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档7.txt',getdate());
-insert into tbl_Documentation values('技术文档8','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档8.txt',getdate());
-insert into tbl_Documentation values('技术文档9','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档9.txt',getdate());
-insert into tbl_Documentation values('技术文档10','200eo_1','技术文档','我是技术文档','./Uploaded/技术文档10.txt',getdate());
+insert into tbl_Documentation values('技术文档1.txt','200eo_1','1','我是技术文档','./Uploaded/技术文档1.txt',getdate());
+insert into tbl_Documentation values('技术文档2.txt','200eo_1','1','我是技术文档','./Uploaded/技术文档2.txt',getdate());
+insert into tbl_Documentation values('技术文档3.txt','200eo_1','2','我是技术文档','./Uploaded/技术文档3.txt',getdate());
+insert into tbl_Documentation values('技术文档4.txt','200eo_1','2','我是技术文档','./Uploaded/技术文档4.txt',getdate());
+insert into tbl_Documentation values('技术文档5.txt','200eo_1','3','我是技术文档','./Uploaded/技术文档5.txt',getdate());
+insert into tbl_Documentation values('技术文档6.txt','200eo_1','3','我是技术文档','./Uploaded/技术文档6.txt',getdate());
+insert into tbl_Documentation values('技术文档7.txt','200eo_1','4','我是技术文档','./Uploaded/技术文档7.txt',getdate());
+insert into tbl_Documentation values('技术文档8.txt','200eo_1','4','我是技术文档','./Uploaded/技术文档8.txt',getdate());
+insert into tbl_Documentation values('技术文档9.txt','200eo_1','5','我是技术文档','./Uploaded/技术文档9.txt',getdate());
+insert into tbl_Documentation values('技术文档10.txt','200eo_1','5','我是技术文档','./Uploaded/技术文档10.txt',getdate());
 
 
 insert into tbl_Employment values('招聘高级工程师','工程部','本公司招聘','面议','本公司目前需要招聘高级工程师，主要工作为从事工程设计，工程管理等，需要技能：防雷技术，自动化。学历：硕士研究生'
