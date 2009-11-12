@@ -22,23 +22,50 @@
     <div id="cB">
         <div id="banner">
             <img src="./images/banner.jpg" border="0"></div>
-        <div id="news-title">
-            <h3>
-               <asp:Label ID="newsTitleLB" runat="server" Text="Label"></asp:Label>
-            </h3>
-        </div>
         <div id="news">
-            <div id="article">
-                <div>
-                    <asp:Literal ID="newsContentLT" runat="server"></asp:Literal>
-                    <div id8="author">
-                        <asp:Label ID="authorLB" runat="server" Text="Label"></asp:Label>@<asp:Label ID="changeDateLB" runat="server" Text="Label"></asp:Label>
-                    </div>
-                    <div id="show">
+            <table>
+                <tr style="height: 30px">
+                </tr>
+                <tr>
+                    <td style="width: 50px">
+                    </td>
+                    <td style="width: 450px" align="center">
+                        <h3 style="font-size: 16px">
+                            <asp:Label ID="newsTitleLB" runat="server" Text="Label"></asp:Label>
+                        </h3>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr style="height: 15px">
+                </tr>
+                <tr>
+                    <td style="width: 50px">
+                    </td>
+                    <td style="width: 300px" align="center">
+                        添加人：<asp:Label ID="authorLB" runat="server" Text="Label"></asp:Label>
+                    </td>
+                    <td>
+                        添加时间：<asp:Label ID="changeDateLB" runat="server" Text="Label"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr style="height: 35px">
+                    <td style="width: 50px">
+                    </td>
+                    <td>
+                        <asp:Literal ID="newsContentLT" runat="server"></asp:Literal>
+                    </td>
+                </tr>
+                <tr style="height: 35px">
+                    <td style="width: 50px">
+                    </td>
+                    <td>
                         浏览[<asp:Label ID="clickNumLB" runat="server" Text="Label"></asp:Label>]
-                    </div>
-                </div>
-            </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </asp:Content>
