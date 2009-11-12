@@ -13,8 +13,7 @@
         <form>
         查找:
         <asp:TextBox ID="SearchTB" runat="server"></asp:TextBox>
-        <asp:Button ID="SearchBT" runat="server" Text="搜" Height="25px" Width="25px" 
-            onclick="SearchBT_Click" />
+        <asp:Button ID="SearchBT" runat="server" Text="搜" Height="25px" Width="25px" OnClick="SearchBT_Click" />
         </form>
     </div>
 </asp:Content>
@@ -23,9 +22,10 @@
         <h3>
             <font style="font-family: '微软雅黑'; font-size: 16px">新闻中心</font>
         </h3>
-        
         <asp:GridView ID="xpNewsList" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-            Width="100%" OnPageIndexChanging="xpNewsList_PageIndexChanging" BorderWidth="0px">
+            Width="100%" OnPageIndexChanging="xpNewsList_PageIndexChanging" 
+            OnRowCreated="xpNewsList_RowCreated" BorderWidth="0px" PageSize="8">
+            <PagerSettings PageButtonCount="3" />
             <Columns>
                 <asp:TemplateField>
                     <HeaderTemplate>
@@ -39,14 +39,13 @@
                                             <%#Eval("title")%>
                                         </a>
                                     </td>
-                                    <td>
+                                    <td style="width: 150px">
                                         <font style="font-family: 微软雅黑; color: Gray; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
-                                        </font>
                                     </td>
                                 </tr>
                             </table>
                             <p>
-                                <%#Eval("content").ToString().Substring(0,2) %>
+                                <%#Eval("content").ToString().Substring(0,2) %>...
                             </p>
                         </div>
                     </ItemTemplate>
@@ -55,7 +54,7 @@
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
             <EmptyDataTemplate>
                 <p style="text-align: center;">
-                  新闻列表为空
+                    新闻列表为空
                 </p>
             </EmptyDataTemplate>
             <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />

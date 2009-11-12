@@ -51,7 +51,7 @@
                 <td>
                     <asp:GridView ID="SalesGridView" runat="server" CellPadding="4" 
                         Width="100%" GridLines="None" AutoGenerateColumns="False" 
-                        AllowPaging="True" OnPageIndexChanging="SalesGridView_PageIndexChanging">
+                        AllowPaging="True" OnPageIndexChanging="SalesGridView_PageIndexChanging" OnRowCreated="SalesGridView_RowCreated" PageSize="8">
                         <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                         <Columns>
                             <asp:BoundField DataField="area" HeaderText="地区" />
