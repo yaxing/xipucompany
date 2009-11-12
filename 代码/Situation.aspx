@@ -10,11 +10,10 @@
 		<!--<h3>TESTIMONIALS</h3>  -->
 		<ul>
         <li id="news" align="left"><a href="./Situation.aspx" target="_self">公司简介</a></li>
-        <li id="news" align="left"><a href="./certification.aspx" target="_self">总经理的话</a></li>
-        <li id="news" align="left"><a href="./tecSupport.aspx" target="_self">企业文化</a></li>
-        <li id="news" align="left"><a href="./bbs.aspx" target="_self">公司结构</a></li>
-        <li id="news" align="left"><a href="./bbs.aspx" target="_self">公司待遇</a></li>
-        </ul>		
+        <li id="news" align="left"><a href="./Word.aspx" target="_self">总经理的话</a></li>
+        <li id="news" align="left"><a href="./Culture.aspx" target="_self">企业文化</a></li>
+        <li id="news" align="left"><a href="./Structure.aspx" target="_self">公司结构</a></li>
+        </ul>	
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" Runat="Server">
    <h3><font style="font-family:'微软雅黑'; font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司简介</font></h3>
