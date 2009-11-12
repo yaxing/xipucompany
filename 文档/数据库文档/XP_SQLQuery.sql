@@ -27,7 +27,7 @@ create table tbl_Documentation(
  [ID] int identity(1,1) not null,
  [doName] varchar(40) not null,
  [doNumber] varchar(20) not null,
- [doType] varchar(20) not null,
+ [doType] int not null,
  [doDescription] text null,
  [doPath] varchar(128) not null,
  [addTime] datetime not null,
