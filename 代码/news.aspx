@@ -1,14 +1,23 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="news.aspx.cs" Inherits="news" Title="新闻中心" %>
+    CodeFile="news.aspx.cs" Inherits="news" Title="云南希普防雷工程有限公司" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
-    <h3>
-        <font style="font-family: '微软雅黑'; font-size: 16px">新闻分类</font></h3>
-    <ul>
-        <li id="news" align="left"><a href="./news.aspx?newstype=1" target="_self">内部新闻</a></li>
-        <li id="news" align="left"><a href="./news.aspx?newstype=2" target="_self">业界新闻</a></li>
-    </ul>
-    <br>
+    <div>
+        <h3>
+            <font style="font-family: '微软雅黑'; font-size: 16px">新闻分类</font></h3>
+        <p>
+            &nbsp;</p>
+        <div>
+            <ul>
+                <div id="news">
+                    <li align="left"><a href="./news.aspx?newstype=1" target="_self">内部新闻</a></li>
+                </div>
+                <div id="news">
+                    <li align="left"><a href="./news.aspx?newstype=2" target="_self">业界新闻</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
     <div id="search">
         <form>
         查找:
@@ -23,8 +32,8 @@
             <font style="font-family: '微软雅黑'; font-size: 16px">新闻中心</font>
         </h3>
         <asp:GridView ID="xpNewsList" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-            Width="100%" OnPageIndexChanging="xpNewsList_PageIndexChanging" 
-            OnRowCreated="xpNewsList_RowCreated" BorderWidth="0px" PageSize="8">
+            Width="100%" OnPageIndexChanging="xpNewsList_PageIndexChanging" OnRowCreated="xpNewsList_RowCreated"
+            BorderWidth="0px" PageSize="8" GridLines="None">
             <PagerSettings PageButtonCount="3" />
             <Columns>
                 <asp:TemplateField>
