@@ -13,6 +13,8 @@ insert into tbl_CompanyIntro values('./images/b6.jpg','ÔÆÄÏÏ£ÆÕ·ÀÀ×¹¤³ÌÓĞÏŞ¹«Ë¾³
                                     ,'¹«Ë¾Í¨¹ı²»¶ÏµØÌ½Ë÷´´ĞÂ£¬ÕıÔÚ½øÈëĞÂµÄ·¢Õ¹Ê±ÆÚ¡ª¡ª¼¯ºÏÏÖ´ú·ÀÀ×µÄ×îĞÂÑĞ¾¿³É¹û£¬ĞÎ³É¼¯·ÀÀ×Éè±¸ÊµÑé³¡Ëù¡¢·ÀÀ×ÏµÍ³¹ÜÀí¹¤³ÌºÍ·ÀÀ×ÏµÍ³×ÛºÏÆÀ¼ÛÌåÏµÎªÒ»ÌåµÄ´óĞÍ·ÀÀ×ÆóÒµ¡£'  
                                    );
 
+insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('ÓñÏª¾íÑÌ³§','ÓñÏª¾íÑÌ³§','./project_images/1.jpg',getdate());
+insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('Çú¾¸¾íÑÌ³§','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡','./project_images/1.jpg',getdate());
 insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('À¥Ã÷ÊĞ°î¿Ë´óÏÃ','À¥Ã÷ÊĞ°î¿Ë´óÏÃ·ÀÀ×¹¤³Ì','./project_images/1.jpg',getdate());
 insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('³şĞÛÖİÕş¸®','À¥Ã÷ÊĞ°î¿Ë´óÏÃ·ÀÀ×¹¤³Ì','./project_images/2.jpg',getdate());
 insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('Îå»ªÇøÕş¸®´óÂ¥','À¥Ã÷ÊĞ°î¿Ë´óÏÃ·ÀÀ×¹¤³Ì','./project_images/3.jpg',getdate());
@@ -31,16 +33,16 @@ insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('À¥
 insert into tbl_Customer(customerName,introduction,imagePath,addTime) values('À¥Ã÷ÊĞ°î¿Ë´óÏÃ','À¥Ã÷ÊĞ°î¿Ë´óÏÃ·ÀÀ×¹¤³Ì','./project_images/1.jpg',getdate());
 
 
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ1.txt','200eo_1','1','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ1.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ2.txt','200eo_1','1','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ2.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ3.txt','200eo_1','2','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ3.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ4.txt','200eo_1','2','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ4.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ5.txt','200eo_1','3','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ5.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ6.txt','200eo_1','3','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ6.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ7.txt','200eo_1','4','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ7.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ8.txt','200eo_1','4','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ8.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ9.txt','200eo_1','5','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ9.txt',getdate());
-insert into tbl_Documentation values('¼¼ÊõÎÄµµ10.txt','200eo_1','5','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼ÊõÎÄµµ10.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ1.txt','200eo_1','1','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼Êõ¹æ·¶/¼¼ÊõÎÄµµ2.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ2.txt','200eo_1','1','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼Êõ¹æ·¶/¼¼ÊõÎÄµµ9.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ3.txt','200eo_1','2','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/°²×°¼¼Êõ/¼¼ÊõÎÄµµ5.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ4.txt','200eo_1','2','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/°²×°¼¼Êõ/¼¼ÊõÎÄµµ8.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ5.txt','200eo_1','3','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/²ÎÊı½âÊÍ/¼¼ÊõÎÄµµ3.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ6.txt','200eo_1','3','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/²ÎÊı½âÊÍ/¼¼ÊõÎÄµµ6.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ7.txt','200eo_1','4','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/µäĞÍÓ¦ÓÃ/¼¼ÊõÎÄµµ7.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ8.txt','200eo_1','4','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/µäĞÍÓ¦ÓÃ/¼¼ÊõÎÄµµ10.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ9.txt','200eo_1','5','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼Êõ¹æ·¶/¼¼ÊõÎÄµµ9.txt',getdate());
+insert into tbl_Documentation values('¼¼ÊõÎÄµµ10.txt','200eo_1','5','ÎÒÊÇ¼¼ÊõÎÄµµ','./Uploaded/¼¼Êõ¹æ·¶/¼¼ÊõÎÄµµ10.txt',getdate());
 
 
 insert into tbl_Employment values('ÕĞÆ¸¸ß¼¶¹¤³ÌÊ¦','¹¤³Ì²¿','±¾¹«Ë¾ÕĞÆ¸','ÃæÒé','±¾¹«Ë¾Ä¿Ç°ĞèÒªÕĞÆ¸¸ß¼¶¹¤³ÌÊ¦£¬Ö÷Òª¹¤×÷Îª´ÓÊÂ¹¤³ÌÉè¼Æ£¬¹¤³Ì¹ÜÀíµÈ£¬ĞèÒª¼¼ÄÜ£º·ÀÀ×¼¼Êõ£¬×Ô¶¯»¯¡£Ñ§Àú£ºË¶Ê¿ÑĞ¾¿Éú'
@@ -119,50 +121,59 @@ insert into tbl_News values('ĞÄÏµÔÖÇø£¬¹«Ë¾È«ÌåÔ±¹¤»ı¼«Îªãë´¨µØÕğ¾è¿î','2','ÔÖÄÑ
                             ,'Àî¿ªÁÖ',getdate(),getdate(),'0');
 
 
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','2','./project_images/1.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','1','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/5.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','4','./project_images/6.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','5','./project_images/7.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','6','./project_images/2.jpg',getdate());
-insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','7','./project_images/4.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§01','ÓñÏª¾íÑÌ³§·ÀÀ×¹¤³Ì','3','./project_images/ÓñÏª¾íÑÌ³§01.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§02','ÓñÏª¾íÑÌ³§·ÀÀ×¹¤³Ì','3','./project_images/ÓñÏª¾íÑÌ³§02.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§03','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/ÓñÏª¾íÑÌ³§03.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡01','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾01','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡01.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡02','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾02','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡02.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡03','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾03','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡03.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡04','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾04','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡04.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡05','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾05','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡05.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§01','ÓñÏª¾íÑÌ³§·ÀÀ×¹¤³Ì','3','./project_images/ÓñÏª¾íÑÌ³§01.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§02','ÓñÏª¾íÑÌ³§·ÀÀ×¹¤³Ì','3','./project_images/ÓñÏª¾íÑÌ³§02.jpg',getdate());
+insert into tbl_Project values('ÓñÏª¾íÑÌ³§03','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','3','./project_images/ÓñÏª¾íÑÌ³§03.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡01','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾01','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡01.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡02','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾02','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡02.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡03','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾03','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡03.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡04','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾04','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡04.jpg',getdate());
+insert into tbl_Project values('Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡05','Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡Õ¹Ê¾05','3','./project_images/Çú¾¸¾íÑÌ³§Â¶Ìì¶Ñ³¡05.jpg',getdate());
 
-insert into tbl_SalesDepartment values('±±¾©','¹«Ë¾×Ü²¿','±±¾©ÊĞº£µíÇø','01068941236');
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/5.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/6.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/7.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/4.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/1.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/5.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/6.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/7.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/4.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/1.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞÊĞÕş¸®','À¥Ã÷ÊĞÊĞÕş¸®´óÂ¥','0','./project_images/2.jpg',getdate());
+
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/5.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/6.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/7.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/4.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/1.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/5.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/5.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/6.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/7.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/4.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/1.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/2.jpg',getdate());
+insert into tbl_Project values('À¥Ã÷ÊĞ¹«°²¾Ö','À¥Ã÷ÊĞ¹«°²¾Ö·ÀÀ×¹¤³Ì','1','./project_images/5.jpg',getdate());
+
+
+insert into tbl_SalesDepartment values('ÔÆÄÏÊ¡À¥Ã÷ÊĞ','¹«Ë¾×Ü²¿','ÔÆÄÏÊ¡À¥Ã÷ÊĞ','08716666666');
 insert into tbl_SalesDepartment values('±±¾©','¹«Ë¾×Ü²¿','±±¾©ÊĞº£µíÇø','01068941236');
 insert into tbl_SalesDepartment values('±±¾©','¹«Ë¾×Ü²¿','±±¾©ÊĞº£µíÇø','01068941236');
 insert into tbl_SalesDepartment values('±±¾©','¹«Ë¾×Ü²¿','±±¾©ÊĞº£µíÇø','01068941236');
