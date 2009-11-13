@@ -20,35 +20,44 @@
     <div id="cB1">
         <h3>
             <font style="font-family: '微软雅黑'; font-size: 16px">新闻中心</font></h3>
-        <asp:Repeater ID="newsList" runat="server">
-            <HeaderTemplate>
-            </HeaderTemplate>
-            <ItemTemplate>
-                <div id="news">
-                    <table>
-                        <tr>
-                            <td style="width: 220px">
-                                <a href="newsinfo.aspx?newsID=<%#Eval("ID") %>">
-                                    <%#Eval("title")%>
-                                </a>
-                            </td>
-                            <td style="width: 150px">
-                                <font style="font-family: 微软雅黑; color: Gray; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>
-                        <%#Eval("content").ToString().Substring(0,2) %>
-                        ...
-                    </p>
-                </div>
-            </ItemTemplate>
-            <FooterTemplate>
-                <p align="right">
-                    <a href="news.aspx"><font style="font-family: 黑体; font-size: 10px">更多...</font></a>
+        <asp:Panel ID="newsListFalse" runat="server">
+            <div id="Div1">
+                <p style="text-align" align="center">
+                    新闻列表为空
                 </p>
-            </FooterTemplate>
-        </asp:Repeater>
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="newsListTrue" runat="server">
+            <asp:Repeater ID="newsList" runat="server">
+                <HeaderTemplate>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <div id="news">
+                        <table>
+                            <tr>
+                                <td style="width: 220px">
+                                    <a href="newsinfo.aspx?newsID=<%#Eval("ID") %>">
+                                        <%#Eval("title")%>
+                                    </a>
+                                </td>
+                                <td style="width: 150px">
+                                    <font style="font-family: 微软雅黑; color: Gray; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>
+                            <%#Eval("content").ToString().Substring(0,2) %>
+                            ...
+                        </p>
+                    </div>
+                </ItemTemplate>
+                <FooterTemplate>
+                    <p align="right">
+                        <a href="news.aspx"><font style="font-family: 黑体; font-size: 10px">更多...</font></a>
+                    </p>
+                </FooterTemplate>
+            </asp:Repeater>
+        </asp:Panel>
     </div>
     <!-- cB1 -->
     <div id="cB2">

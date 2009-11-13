@@ -7,7 +7,12 @@
         </siteMapNode>
       </siteMapNode>
         <siteMapNode url="~/certification.aspx" title="资质证明"  description="" />
-        <siteMapNode url="~/tecSupport.aspx" title="技术支持"  description="" />
+      <siteMapNode url="~/tecSupport.aspx" title="技术支持"  description="">
+        <siteMapNode url="~/TecClassify.aspx?Type=1" title="技术规范"  description="" />
+        <siteMapNode url="TecClassify.aspx?Type=2" title="安装技术"></siteMapNode>
+        <siteMapNode url="TecClassify.aspx?Type=3" title="参数解释"></siteMapNode>
+        <siteMapNode url="TecClassify.aspx?Type=4" title="典型应用"></siteMapNode>
+      </siteMapNode>
         <siteMapNode url="~/bbs.aspx" title="客户留言"  description="" />
       <siteMapNode url="situation.aspx" title="关于我们">
         

@@ -24,7 +24,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
     <div class="Ctopright">
     </div>
-    <div id="cB1" style="width:400px">
+    <div id="cB1" style="width: 400px">
         <h3>
             <%--<font style="font-family: '微软雅黑'; font-size: 16px">最新工程</font></h3>--%>
             <asp:Label ID="proTypeTitle" runat="server" Font-Size="16px"></asp:Label>
@@ -50,6 +50,11 @@
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
+                        <EmptyDataTemplate>
+                            <p style="text-align" align="center">
+                                此类客户暂未添加工程
+                            </p>
+                        </EmptyDataTemplate>
                     </asp:GridView>
                 </td>
             </tr>
@@ -75,7 +80,7 @@
                             <tr>
                                 <td>
                                     <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
-                                        <img border="0" src="<%#Eval("imagePath") %>"></a>
+                                        <img border="0" style="width:150px" src="<%#Eval("imagePath") %>"></a>
                                 </td>
                             </tr>
                         </table>
