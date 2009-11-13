@@ -8,16 +8,11 @@
     <p>&nbsp;</p>
     <!--<h3>TESTIMONIALS</h3>  -->
     <ul>
-    <a href="TecClassify.aspx?Type=1" target="_self">
-    <li id="news" align="left">技术规范</li></a>
-    <a href="TecClassify.aspx?Type=2" target="_self">
-    <li id="news" align="left">安装技术</li></a>
-    <a href="TecClassify.aspx?Type=3" target="_self">
-    <li id="news" align="left">参数解释</li></a>
-    <a href="TecClassify.aspx?Type=4" target="_self">
-    <li id="news" align="left">典型应用</li></a>
-    <a href="TecClassify.aspx?Type=4" target="_self">
-    <li id="news" align="left">其他</li></a>
+    <li id="news" align="left"><a href="TecClassify.aspx?Type=1" target="_self">技术规范</a></li>    
+    <li id="news" align="left"><a href="TecClassify.aspx?Type=2" target="_self">安装技术</a></li>    
+    <li id="news" align="left"><a href="TecClassify.aspx?Type=3" target="_self">参数解释</a></li>    
+    <li id="news" align="left"><a href="TecClassify.aspx?Type=4" target="_self">典型应用</a></li>
+    <li id="news" align="left"><a href="TecClassify.aspx?Type=5" target="_self">其&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;他</a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" Runat="Server">
