@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="sales.aspx.cs" Inherits="sales" Title="营销网络" %>
+    CodeFile="sales.aspx.cs" Inherits="sales" Title="云南希普防雷工程有限公司" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <h3>
@@ -10,8 +10,6 @@
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
-    <div class="Ctopright">
-    </div>
     <div id="main">
         <table>
             <tr style="height: 15px">
