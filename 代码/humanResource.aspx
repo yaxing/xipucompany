@@ -42,7 +42,7 @@
                                                 <td style="width: 110px">
                                                     部门：<%#Eval("department") %>
                                                 </td>
-                                                <td style="width:250px">
+                                                <td style="width: 250px">
                                                     添加时间：<%#Eval("changeTime") %>
                                                 </td>
                                             </tr>
@@ -56,6 +56,13 @@
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
+                        <EmptyDataTemplate>
+                            <table>
+                                <p style="text-align" align="center">
+                                    招聘信息列表为空
+                                </p>
+                            </table>
+                        </EmptyDataTemplate>
                     </asp:GridView>
                 </td>
             </tr>

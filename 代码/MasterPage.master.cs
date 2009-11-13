@@ -13,6 +13,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        this.Page.Title = "云南希普防雷工程有限公司";
     }
 }

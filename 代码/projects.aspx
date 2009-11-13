@@ -72,7 +72,7 @@
                             <tr>
                                 <td>
                                     <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
-                                        <img border="0" src="<%#Eval("imagePath") %>"></a>
+                                        <img border="0" style="width:200px" src="<%#Eval("imagePath") %>"></a>
                                 </td>
                             </tr>
                         </table>
