@@ -3,10 +3,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="Server">
     <div>
-        <h3>
-            <font style="font-family: '微软雅黑'; font-size: 16px">新闻分类</font></h3>
-        <p>
-            &nbsp;</p>
+        <div>
+            <h3>
+                <font style="font-family: '微软雅黑'; font-size: 16px">新闻分类</font></h3>
+            <p>
+                &nbsp;</p>
+        </div>
         <div>
             <ul>
                 <div id="news">
@@ -19,11 +21,9 @@
         </div>
     </div>
     <div id="search">
-        <form>
         查找:
         <asp:TextBox ID="SearchTB" runat="server"></asp:TextBox>
         <asp:Button ID="SearchBT" runat="server" Text="搜" Height="25px" Width="25px" OnClick="SearchBT_Click" />
-        </form>
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
@@ -49,7 +49,7 @@
                                         </a>
                                     </td>
                                     <td style="width: 150px">
-                                        <font style="font-family: 微软雅黑; color: Gray; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
+                                        <font style="font-family: 微软雅黑; color: black; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
                                     </td>
                                 </tr>
                             </table>
