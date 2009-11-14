@@ -53,7 +53,7 @@
                 </ItemTemplate>
                 <FooterTemplate>
                     <p align="right">
-                        <a href="news.aspx"><font style="font-family: 黑体; font-size: 10px; color:Black">更多...</font></a>
+                        <a href="news.aspx"><font style="font-family: 黑体; font-size: 10px;>更多...</font></a>
                     </p>
                 </FooterTemplate>
             </asp:Repeater>
