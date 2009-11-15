@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs"
+    Inherits="Admin_MasterPageAdmin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head runat="server">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css" />
+    <!--[if lt IE 6]>
+<link rel="stylesheet" media="screen" href="ie5.css" />
+<![endif]-->
+    <title>Deine Seite</title>
+</head>
+<body>
+    <%--    <form id="form1" runat="server">
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>--%>
+    <div id="big">
+        <h1 id="header">
+            云南希普防雷工程有限公司网站后台管理系统</h1>
+        <div id="inlay">
+            <div>
+                <asp:ContentPlaceHolder ID="left" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%--<ul id="menu">
+			<li class="active"><a href="index.html">Startseite</a></li>
+			<li><a href="index.aspx">News</a></li>
+			<li><a href="index.html">Team</a></li>
+			<li><a href="index.html">Galerie</a></li>
+			<li><a href="index.html">Angebot</a></li>
+		</ul>--%>
+            <div id="content">
+                <div>
+                    <asp:ContentPlaceHolder ID="center" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--<div class="contentc">
+				<h1>Willkommen auf domain.ch</h1>
+				<p>Blindtexte werden zunehmend popul鋜er! Besonders naive Leute lesen diese sinnlosen Aneinanderreihungen von Worten immer sehr gerne und mit grossem Interesse. Aber wieso ist das eigentlich so? Geschieht das nur bei langweiligen Deisgns oder auch sonst? Naja, kann uns eigentlich egal sein, denn nun wiederholt sich der Text eh nur noch, also wenn Sie immer noch dabei sein sollten, ist nun endg黷lig Schluss:Blindtexte werden zunehmend popul鋜er! Besonders naive Leute lesen diese sinnlosen Aneinanderreihungen von Worten immer sehr gerne </p>
+			</div>
+			<div class="contentbox logos">
+				<h2>Logos</h2>
+				<img src="images/h_logos.jpg" alt="Bild: Logos" title="" />
+				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
+			</div>
+			<div class="contentbox webdesign">
+				<h2>Webdesign</h2>
+				<img src="images/h_webdesign.jpg" alt="Bild: Webdesign" title="" />
+				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
+			</div>
+			<div class="contentbox prindesign">
+				<h2>Printdesign</h2>
+				<img src="images/h_printdesign.jpg" alt="Bild: Printdesign" title="" />
+				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
+			</div>--%>
+            </div>
+            <div id="newsbox">
+                <div>
+                    <asp:ContentPlaceHolder ID="right" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--<h2>STIUVOU NEWS</h2>
+			<dl class="news">
+				<dt>17 Jun 2006</dt>
+				<dd>Unter <a href="index.html">Galerie</a> finden sich nun die ersten Werke.</dd>
+				<dt>03 Mar 2006</dt>
+				<dd>Das <a href="index.html">Team</a> ist komplett und stellt sich vor. </dd>
+				<dt>17 Mar 2006</dt>
+				<dd>Irgendetwas fehlt noch, mal schauen, was das genau ist</dd>
+			</dl>
+			<img src="images/newsboxpic.jpg" class="newsboxpic" alt="Bild: Windrad" />--%>
+            </div>
+        </div>
+        <div id="push">
+            &nbsp;</div>
+    </div>
+    <div id="footer">
+        copyright by Forus</div>
+</body>
+</html>
