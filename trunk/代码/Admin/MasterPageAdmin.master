@@ -23,6 +23,9 @@
     <div id="big">
         <h1 id="header">
             云南希普防雷工程有限公司网站后台管理系统</h1>
+            <div style="position:relative; left:560px; top:-20px; color:White;">
+             <a href="#" style="color:White">退出登录并回到前台首页>></a>
+            </div>
         <div id="inlay">
             <div>
                 <asp:ContentPlaceHolder ID="left" runat="server">
