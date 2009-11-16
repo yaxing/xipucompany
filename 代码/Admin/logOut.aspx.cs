@@ -9,10 +9,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-public partial class Admin_adminIndex : System.Web.UI.Page
+public partial class Admin_logOut : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        Session.Abandon();
+        Session.Clear();
+        Response.Write("<script>location.href('../index.aspx');</script>");
     }
 }
