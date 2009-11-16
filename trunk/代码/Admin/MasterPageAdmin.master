@@ -14,70 +14,30 @@
     <title>Deine Seite</title>
 </head>
 <body>
-    <%--    <form id="form1" runat="server">
-    <div>
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
-        </asp:contentplaceholder>
-    </div>
-    </form>--%>
+<form runat="server">
     <div id="big">
         <h1 id="header">
             云南希普防雷工程有限公司网站后台管理系统</h1>
-            <div style="position:relative; left:560px; top:-20px; color:White;">
-             <a href="#" style="color:White">退出登录并回到前台首页>></a>
-            </div>
+        <div style="position: relative; left: 560px; top: -20px; color: White;">
+            <%--<a href="#" style="color: White">退出登录并回到前台首页>></a>--%>
+            <asp:LinkButton runat="server" ID="logOut" OnClick="logOut_Click">退出登录并回到前台首页>></asp:LinkButton>
+        </div>
         <div id="inlay">
             <div>
                 <asp:ContentPlaceHolder ID="left" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <%--<ul id="menu">
-			<li class="active"><a href="index.html">Startseite</a></li>
-			<li><a href="index.aspx">News</a></li>
-			<li><a href="index.html">Team</a></li>
-			<li><a href="index.html">Galerie</a></li>
-			<li><a href="index.html">Angebot</a></li>
-		</ul>--%>
             <div id="content">
                 <div>
                     <asp:ContentPlaceHolder ID="center" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <%--<div class="contentc">
-				<h1>Willkommen auf domain.ch</h1>
-				<p>Blindtexte werden zunehmend popul鋜er! Besonders naive Leute lesen diese sinnlosen Aneinanderreihungen von Worten immer sehr gerne und mit grossem Interesse. Aber wieso ist das eigentlich so? Geschieht das nur bei langweiligen Deisgns oder auch sonst? Naja, kann uns eigentlich egal sein, denn nun wiederholt sich der Text eh nur noch, also wenn Sie immer noch dabei sein sollten, ist nun endg黷lig Schluss:Blindtexte werden zunehmend popul鋜er! Besonders naive Leute lesen diese sinnlosen Aneinanderreihungen von Worten immer sehr gerne </p>
-			</div>
-			<div class="contentbox logos">
-				<h2>Logos</h2>
-				<img src="images/h_logos.jpg" alt="Bild: Logos" title="" />
-				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
-			</div>
-			<div class="contentbox webdesign">
-				<h2>Webdesign</h2>
-				<img src="images/h_webdesign.jpg" alt="Bild: Webdesign" title="" />
-				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
-			</div>
-			<div class="contentbox prindesign">
-				<h2>Printdesign</h2>
-				<img src="images/h_printdesign.jpg" alt="Bild: Printdesign" title="" />
-				<p>Logos sind langwei-<br />lig, wenn sie ohne Emotionen zubereit-<br />et wurden, was wir nat黵lich tun...</p>
-			</div>--%>
             </div>
             <div id="newsbox">
                 <div>
                     <asp:ContentPlaceHolder ID="right" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-                <%--<h2>STIUVOU NEWS</h2>
-			<dl class="news">
-				<dt>17 Jun 2006</dt>
-				<dd>Unter <a href="index.html">Galerie</a> finden sich nun die ersten Werke.</dd>
-				<dt>03 Mar 2006</dt>
-				<dd>Das <a href="index.html">Team</a> ist komplett und stellt sich vor. </dd>
-				<dt>17 Mar 2006</dt>
-				<dd>Irgendetwas fehlt noch, mal schauen, was das genau ist</dd>
-			</dl>
-			<img src="images/newsboxpic.jpg" class="newsboxpic" alt="Bild: Windrad" />--%>
             </div>
         </div>
         <div id="push">
@@ -86,4 +46,5 @@
     <div id="footer">
         copyright by Forus</div>
 </body>
+</form>
 </html>
