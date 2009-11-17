@@ -18,6 +18,7 @@ public partial class ProjectsIntro : System.Web.UI.Page
     String strConn;
     protected void Page_Load(object sender, EventArgs e)
     {
+        
         int proId = Convert.ToInt32(Request.QueryString["proId"]);
         if (!Page.IsPostBack)
         {
@@ -27,7 +28,6 @@ public partial class ProjectsIntro : System.Web.UI.Page
 
             proIntro.DataSource = projectsIntro.GetProjectsDetails(proId);
             proIntro.DataBind();
-
         }
 
     }
