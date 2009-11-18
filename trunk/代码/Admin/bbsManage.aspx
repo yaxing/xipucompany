@@ -7,7 +7,7 @@
         <li><a href="adminIndex.aspx"><strong>技术文档管理</strong></a></li>
         <li><a href="adminIndex.aspx"><strong>客户管理</strong></a></li>
         <li><a href="adminIndex.aspx"><strong>营业部管理</strong></a></li>
-        <li><a href="adminIndex.aspx"><strong>招聘信息管理</strong></a></li>
+        <li><a href="HrManage.aspx"><strong>招聘信息管理</strong></a></li>
         <li><a href="bbsManage.aspx"><strong>客户留言管理</strong></a></li>
         <li><a href="adminIndex.aspx"><strong>新闻管理</strong></a></li>
         <li><a href="adminIndex.aspx"><strong>管理员信息</strong></a></li>
@@ -37,7 +37,7 @@
                     <asp:Label ID="LabTime" runat="server" Font-Names="微软雅黑" Font-Size="12px" Text='<%#Eval("addTime").ToString().Substring(0,10) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:TemplateField HeaderStyle-BackColor="#E0E0E0">
+            <asp:TemplateField HeaderStyle-BackColor="#E0E0E0" HeaderText="操作" HeaderStyle-Font-Names="微软雅黑" HeaderStyle-Font-Size="15px">
                 <ItemTemplate>
                     <img src="images/delete.jpg" />
                     <asp:LinkButton ID="lbtnDelete" runat="server" CommandArgument='<%#Eval("ID") %>'

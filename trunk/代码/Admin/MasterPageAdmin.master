@@ -20,7 +20,7 @@
             云南希普防雷工程有限公司网站后台管理系统</h1>
         <div style="position: relative; left: 560px; top: -20px; color: White;">
             <%--<a href="#" style="color: White">退出登录并回到前台首页>></a>--%>
-            <asp:LinkButton runat="server" ID="logOut" OnClick="logOut_Click">退出登录并回到前台首页>></asp:LinkButton>
+            <asp:LinkButton runat="server" ID="logOut" OnClick="logOut_Click"><font style=" font-family:微软雅黑; font-size:12px; color:White">退出登录并回到前台首页>></font></asp:LinkButton>
         </div>
         <div id="inlay">
             <div>
