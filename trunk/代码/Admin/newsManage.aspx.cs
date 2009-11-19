@@ -32,7 +32,7 @@ public partial class Admin_newsManage : System.Web.UI.Page
     {
         String newsTitle = this.TxtNewsTitle.Text.ToString();
         String typeName = this.NewsTypeDDL.SelectedValue.Trim();
-        String newsContent = this.TxtScript.Text.ToString();
+        String newsContent = Server.HtmlEncode(this.NewsAddWebEditor.Text.Replace("'", "''"));
         String author = this.TxtAuthor.Text.ToString();
         XpNews newsIn = new XpNews(DbConnectString);
         if (newsIn.InsertNews(newsTitle, typeName, author, newsContent))
@@ -68,7 +68,8 @@ public partial class Admin_newsManage : System.Web.UI.Page
         this.NewsID_HiddenField.Value = ds.Tables[0].Rows[0][0].ToString();
         this.TxtNewsTitleUpdate.Text = ds.Tables[0].Rows[0][1].ToString();
         this.TxtAuthorUpdate.Text = ds.Tables[0].Rows[0][4].ToString();
-        this.TxtScriptUpdate.Text = ds.Tables[0].Rows[0][3].ToString();
+        String content = Convert.ToString(ds.Tables[0].Rows[0]["content"]);
+        this.NewsUpdateWebEditor.Text = Server.HtmlDecode(content);
         this.NewsCreatePL.Visible = false;
         this.NewsListPL.Visible = false;
         this.NewsUpdatePL.Visible = true;
@@ -124,7 +125,7 @@ public partial class Admin_newsManage : System.Web.UI.Page
         String newsID = this.NewsID_HiddenField.Value.ToString();
         String newsTitle = this.TxtNewsTitleUpdate.Text.ToString();
         String typeName = this.NewsTypeDDLUpdate.SelectedValue.Trim();
-        String newsContent = this.TxtScriptUpdate.Text.ToString();
+        String newsContent = Server.HtmlEncode(this.NewsUpdateWebEditor.Text.Replace("'", "''"));
         String author = this.TxtAuthorUpdate.Text.ToString();
         XpNews newsIn = new XpNews(DbConnectString);
         if (newsIn.UpdateOneNews(newsID, newsTitle, typeName, newsContent, author))
@@ -218,5 +219,15 @@ public partial class Admin_newsManage : System.Web.UI.Page
             GridView1.PageIndex = GridView1.PageCount - 1;
         }
         SourceBind();
+    }
+
+    protected void Page_Error(object sender, EventArgs e)
+    {
+        Exception ex = Server.GetLastError();
+        if (ex is HttpRequestValidationException)
+        {
+            Response.Write("请您输入合法字符串。");
+            Server.ClearError(); // 如果不ClearError()这个异常会继续传到Application_Error()。
+        }
     }
 }
