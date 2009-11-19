@@ -172,5 +172,22 @@ namespace XpCtrl
                 return false;
             }
         }
+
+        /*功能：查看此新闻的类别
+          参数：status存放新闻类别状态*/
+        public static String ShowNewsType(int status)
+        {
+            String type="";
+
+            if (status == 1)
+            {
+                type = "内部新闻";
+            }
+            else if (status == 2)
+            {
+                type = "业界新闻";
+            }
+            return type;
+        }
     }
 }
