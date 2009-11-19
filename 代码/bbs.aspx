@@ -144,7 +144,7 @@
             <td>
             </td>
             <td style="width: 318px">
-                <asp:TextBox ID="customerMessage" runat="server" Width="400px" Height="100px"></asp:TextBox>
+                <asp:TextBox TextMode="MultiLine" ID="customerMessage" runat="server" Width="400px" Height="100px"></asp:TextBox>
             </td>
             <td>
             </td>
