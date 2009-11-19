@@ -114,5 +114,63 @@ namespace XpCtrl
             }
             return ret;
         }
+
+        /*添加新闻*/
+        public Boolean InsertNews(String newsTitle, String typeName, String author, String newsContent)
+        {
+            String indate = DateTime.Now.ToString();
+            String sqlcmd = "Insert into tbl_News(title,newsType,author,content,addTime,changeTime,clickNum) values('" + newsTitle + "','" + typeName + "','" + author + "','" + newsContent + "','" + indate + "','" + indate + "',0)";
+            if (conn.executeUpdate(sqlcmd) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /*删除单个新闻*/
+        public Boolean DeleteOneNews(String newsID)
+        {
+            String sql = "Select * from tbl_News where ID = " + newsID;
+            DataSet ds = new DataSet();
+            try
+            {
+                ds = conn.executeQuery(sql);
+            }
+            catch (System.Exception e)
+            {
+                return false;
+            }
+            if (ds == null || ds.Tables[0].Rows.Count > 1)
+            {
+                return false;
+            }
+            String sqlcmd = "Delete from tbl_News where ID = " + newsID;
+            if (conn.executeUpdate(sqlcmd) >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /*更新新闻信息*/
+        public Boolean UpdateOneNews(String newsID, String newsTitle, String typeName, String newsContent, String author)
+        {
+            String indate = DateTime.Now.ToString();
+            String sqlcmd = "Update tbl_News set title = '" + newsTitle + "',newsType = '" + typeName + "',content = '" + newsContent + "',author = '" + author + "',changeTime = '" + indate + "' where ID = " + newsID;
+            if (conn.executeUpdate(sqlcmd) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
