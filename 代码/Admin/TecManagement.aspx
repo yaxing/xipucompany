@@ -39,7 +39,7 @@
                    </tr>                   
                    <tr>
                       <td>
-                      <font style="font-family: 微软雅黑; color:Black; font-size: 12px">文档选择：<asp:FileUpload ID="fileUpload" runat="server" /> </font>
+                      <font style="font-family: 微软雅黑; color:Black; font-size: 12px">文档选择：<asp:FileUpload ID="fileUpload" runat="server" CausesValidation="false" /> </font>
                       </td>
                    </tr>
                    <tr>
@@ -54,13 +54,13 @@
                               ErrorMessage="文件名不能为空" Display="Dynamic">文件名不能为空</asp:RequiredFieldValidator>                       
                        <asp:RegularExpressionValidator ID="RegularExpressionValidator" runat="server" 
                               ControlToValidate="fileName" ErrorMessage="文件名过长" 
-                              ValidationExpression="^[\u4e00-\u9fa5]{0,20}">文件名过长</asp:RegularExpressionValidator>
+                              ValidationExpression="^.{1,20}$">文件名过长</asp:RegularExpressionValidator>
                        <br />
                        <asp:RequiredFieldValidator ID="fileNumberValidator" runat="server"  ControlToValidate="fileNumber" Display=Dynamic
                               ErrorMessage="文档编号不能为空">文档编号不能为空</asp:RequiredFieldValidator>                      
                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
                               ControlToValidate="fileNumber" ErrorMessage="文档编号太长" 
-                              ValidationExpression="^[\u4e00-\u9fa5]{0,20}">文档编号过长</asp:RegularExpressionValidator>
+                              ValidationExpression="^.{1,20}$">文档编号过长</asp:RegularExpressionValidator>
                        </font>
                    </td>
                    </tr>
