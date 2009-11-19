@@ -315,3 +315,5 @@ insert into tbl_CustomerMessage(Name,Email,Content,addTime) values('希普防雷公司
 insert into tbl_CustomerMessage(Name,Email,Content,addTime) values('希普防雷公司','yangcongknight@gmail.com','业务相关内容咨询',getdate());
 insert into tbl_CustomerMessage(Name,Email,Content,addTime) values('希普防雷公司','yangcongknight@gmail.com','业务相关内容咨询',getdate());
 insert into tbl_CustomerMessage(Name,Email,Content,addTime) values('希普防雷公司','yangcongknight@gmail.com','业务相关内容咨询',getdate());
+
+insert into tbl_Employment values('aaa','aaa','aaa','aaa','aaa','aaa','aaa',getdate(),getdate());
