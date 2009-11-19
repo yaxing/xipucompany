@@ -31,6 +31,41 @@ namespace XpCtrl
             conn.connDB(strDbConn);
         }
 
+        /*功能：添加文档
+          返回值：成功返回true，否则返回false*/
+        public bool AddTec(string fileName ,string fileNumber ,string filetype)
+        {
+            bool successfulAdd = true;
+            string sqlString = "insert into tbl_Documentation (doName,doNumber,doType,doDescription,doPath,addTime) values ('"
+                +fileName + "','" + fileNumber + "','" + filetype + "','a','e:/','" + DateTime.Now + "')" ;
+            try
+            {
+                conn.executeQuery(sqlString);
+            }
+            catch (Exception e)
+            {
+                successfulAdd = false;
+            }
+            return successfulAdd;
+        }
+
+        /*功能：删除文档
+          返回值：成功返回true，否则返回false*/
+        public bool DelTec(int id)
+        {
+            bool successfulDelete = true;
+            string sqlString = "delete from tbl_Documentation where ID = " + id;
+            try
+            {
+                conn.executeQuery(sqlString);
+            }
+            catch(Exception e)
+            {
+                successfulDelete = false;
+            }
+            return successfulDelete;
+        }
+
         /*功能：获取技术文档列表
           返回值：返回技术文档集合*/
         public DataSet GetTecs()
