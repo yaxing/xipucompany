@@ -19,11 +19,12 @@ public partial class Admin_newsManage : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(!Page.IsPostBack)
+        if (!Page.IsPostBack)
         {
             this.NewsCreatePL.Visible = false;
             this.NewsListPL.Visible = true;
             this.NewsUpdatePL.Visible = false;
+            this.TotalPanel.Visible = true;
             SourceBind();
         }
     }
@@ -48,12 +49,14 @@ public partial class Admin_newsManage : System.Web.UI.Page
         this.NewsCreatePL.Visible = true;
         this.NewsListPL.Visible = false;
         this.NewsUpdatePL.Visible = false;
+        this.TotalPanel.Visible = false;
     }
     protected void NewsListLB_Click(object sender, EventArgs e)
     {
         this.NewsCreatePL.Visible = false;
         this.NewsListPL.Visible = true;
         this.NewsUpdatePL.Visible = false;
+        this.TotalPanel.Visible = true;
     }
     protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
     {
@@ -69,6 +72,7 @@ public partial class Admin_newsManage : System.Web.UI.Page
         this.NewsCreatePL.Visible = false;
         this.NewsListPL.Visible = false;
         this.NewsUpdatePL.Visible = true;
+        this.TotalPanel.Visible = false;
     }
     protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
@@ -77,7 +81,7 @@ public partial class Admin_newsManage : System.Web.UI.Page
         int news_ID = Convert.ToInt32(key[0]);
         XpNews xpnews = new XpNews(DbConnectString);
         DataSet ds = new DataSet();
-        
+
         if (xpnews.DeleteOneNews(newsID))
         {
             Response.Write("<script language='javascript'>alert('删除成功');location.href('newsManage.aspx');</script>");
@@ -89,9 +93,6 @@ public partial class Admin_newsManage : System.Web.UI.Page
         ds = xpnews.GetNews();
         this.GridView1.DataSource = ds;
         this.GridView1.DataBind();
-        this.NewsCreatePL.Visible = false;
-        this.NewsListPL.Visible = true;
-        this.NewsUpdatePL.Visible = false;
     }
     protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
     {
@@ -134,9 +135,6 @@ public partial class Admin_newsManage : System.Web.UI.Page
         {
             Response.Write("<script language='javascript'>alert('更新失败。请重新添加。');location.href('newsManage.aspx');</script>");
         }
-        this.NewsCreatePL.Visible = false;
-        this.NewsListPL.Visible = true;
-        this.NewsUpdatePL.Visible = false;
     }
     protected void GridView1_RowCreated(object sender, GridViewRowEventArgs e)
     {
