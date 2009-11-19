@@ -21,7 +21,7 @@ public partial class Admin_assureCode : System.Web.UI.Page
     public void CreateImage(string content)
     {
         //图片长度
-        int imageWidth = (int)(content.Length * 22);
+        int imageWidth = (int)(content.Length * 22+15);
         //创建位图
         Bitmap image = new Bitmap(imageWidth, 30);
         //根据图片大小生成画板

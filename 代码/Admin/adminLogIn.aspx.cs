@@ -90,6 +90,9 @@ public partial class Admin_adminLogIn : System.Web.UI.Page
             else
             {
                 Session.Add("admin", userName.Text);
+                Session.Add("adminId",ds.Tables[0].Rows[0][0].ToString());
+                Session.Add("adminEmail",ds.Tables[0].Rows[0][3].ToString());
+                Session.Add("adminTel",ds.Tables[0].Rows[0][4].ToString());
                 Response.Redirect("adminIndex.aspx");
 
             }

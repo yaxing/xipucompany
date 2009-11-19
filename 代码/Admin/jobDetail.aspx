@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="left" runat="Server">
     <ul id="menu" style="font-size: 12px; color: Black">
         <li class="active"><a href="HrManage.aspx"><strong>管理现有信息</strong></a></li>
-        <li><a href="#"><strong>发布新信息</strong></a></li>
+        <li><a href="newJob.aspx"><strong>发布新信息</strong></a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="center" runat="Server">
