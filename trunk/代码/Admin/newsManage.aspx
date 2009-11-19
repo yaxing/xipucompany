@@ -73,33 +73,57 @@
             <div style="margin: 10px">
                 <img src="../images/arrow_0.gif" /><span style="font-size: medium; font-family: @&#24494;"><strong>&#26032;&#38395;&#21015;&#34920;</strong></span>
             </div>
-            <div style="margin: 10px">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                    AllowPaging="True" Width="100%" 
-                    OnPageIndexChanging="GridView1_PageIndexChanging" OnRowDeleting="GridView1_RowDeleting"
-                    OnRowEditing="GridView1_RowEditing" DataKeyNames="ID">
+            <div style="margin: 5px; font-size: 12px">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AllowPaging="True"
+                    Width="100%" OnPageIndexChanging="GridView1_PageIndexChanging" OnRowDeleting="GridView1_RowDeleting"
+                    OnRowEditing="GridView1_RowEditing" OnRowCreated="GridView1_RowCreated" DataKeyNames="ID">
                     <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                     <Columns>
-                        <asp:BoundField DataField="title" HeaderText="&#26631;&#39064;" />
-                        <asp:BoundField DataField="newsType" HeaderText="&#20998;&#31867;" />
-                        <asp:BoundField DataField="author" HeaderText="&#20316;&#32773;" />
-                        <asp:BoundField DataField="changeTime" HeaderText="&#26356;&#26032;&#26102;&#38388;" />
-                        <asp:ButtonField HeaderText="&#20462;&#25913;&#20449;&#24687;" Text="&#32534;&#36753;"
-                            CommandName="Edit" />
-                        <asp:ButtonField HeaderText="&#21024;&#38500;&#26032;&#38395;" Text="&#21024;&#38500;"
-                            CommandName="Delete" />
+                        <asp:BoundField DataField="title" HeaderText="&#26631;&#39064;" HeaderStyle-Font-Names="&#24494;&#36719;&#38597;&#40657;"
+                            HeaderStyle-Font-Size="15px" HeaderStyle-BackColor="#E0E0E0" HeaderStyle-Height="30px">
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                            <ItemStyle Height="50px" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="newsType" HeaderText="&#20998;&#31867;" HeaderStyle-Font-Names="&#24494;&#36719;&#38597;&#40657;"
+                            HeaderStyle-Font-Size="15px" HeaderStyle-BackColor="#E0E0E0" HeaderStyle-Height="30px">
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="author" HeaderText="&#20316;&#32773;" HeaderStyle-Font-Names="&#24494;&#36719;&#38597;&#40657;"
+                            HeaderStyle-Font-Size="15px" HeaderStyle-BackColor="#E0E0E0" HeaderStyle-Height="30px">
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="changeTime" HeaderText="&#26356;&#26032;&#26102;&#38388;"
+                            HeaderStyle-Font-Names="&#24494;&#36719;&#38597;&#40657;" HeaderStyle-Font-Size="15px"
+                            HeaderStyle-BackColor="#E0E0E0" HeaderStyle-Height="30px">
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                        </asp:BoundField>
+                        <asp:TemplateField HeaderText="&#20462;&#25913;&#20449;&#24687;" ShowHeader="False">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="false" CommandName="Edit"
+                                    ImageUrl="~/Admin/images/edit.jpg" Text="&#32534;&#36753;" />&#32534;&#36753;
+                            </ItemTemplate>
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="&#21024;&#38500;&#26032;&#38395;" ShowHeader="False">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="ImageButton2" runat="server" CausesValidation="false" CommandName="Delete"
+                                    OnClientClick="return confirm('&#30830;&#35748;&#21024;&#38500;&#27492;&#26465;&#20449;&#24687;&#65311;')"
+                                    ImageUrl="~/Admin/images/delete.jpg" Text="&#21024;&#38500;" />&#21024;&#38500;
+                            </ItemTemplate>
+                            <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
+                                Height="30px" />
+                        </asp:TemplateField>
                     </Columns>
                     <EmptyDataTemplate>
                         <p style="text-align: center;">
                             &#26032;&#38395;&#21015;&#34920;&#20026;&#31354;
                         </p>
                     </EmptyDataTemplate>
-                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#ffffff" ForeColor="#000000" HorizontalAlign="Center" />
-                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                    <HeaderStyle BackColor="#e9f2fa" Font-Bold="True" ForeColor="#284775" />
-                    <EditRowStyle BackColor="#999999" />
-                    <AlternatingRowStyle BackColor="#e9f2fa" ForeColor="#284775" />
                 </asp:GridView>
             </div>
         </asp:Panel>
@@ -108,7 +132,7 @@
                 <img src="../images/arrow_0.gif" /><span style="font-size: medium; font-family: @&#24494;"><strong>&#26032;&#38395;&#26356;&#26032;</strong></span>
             </div>
             <asp:HiddenField ID="NewsID_HiddenField" runat="server" />
-            <table>
+            <table style="font-size:12px; text-align:left">
                 <tr>
                     <th style="width: 80px">
                         &#26631;&#39064;<span style="color: #ff0033">*</span>&#65306;
@@ -121,7 +145,7 @@
                 </tr>
                 <tr>
                     <th style="width: 80px">
-                        &#26032;&#38395;&#20998;&#31867;<span style="color: #ff0033">*</span>&#65306;
+                        &#20998;&#31867;<span style="color: #ff0033">*</span>&#65306;
                     </th>
                     <td colspan="1" style="width: 320px">
                         <asp:DropDownList ID="NewsTypeDDLUpdate" runat="server">
@@ -140,12 +164,11 @@
                 </tr>
                 <tr>
                     <th style="width: 80px">
-                        &#20869;&#23481;
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
+                        &#20869;&#23481; :<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
                             ControlToValidate="TxtScriptUpdate" Display="Dynamic">*</asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="&#20869;&#23481;&#38271;&#24230;&#24212;&#35813;&#22312;5&#20010;&#23383;&#31526;&#20197;&#19978;"
                             ControlToValidate="TxtScriptUpdate" ValidationExpression=".{5,}">*</asp:RegularExpressionValidator>
-                    </th>
+                        </th>
                     <td colspan="1" style="width: 320px">
                         <asp:TextBox ID="TxtScriptUpdate" runat="server" Height="75px" TextMode="MultiLine"
                             Width="320px"></asp:TextBox>
@@ -166,4 +189,46 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="right" runat="Server">
+    <table>
+        <tr style="height: 40px">
+        </tr>
+        <tr>
+            <td style="width: 5px">
+            </td>
+            <td align="left" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; width: 40px">
+                &#24635;&#20849;&#26377;
+            </td>
+            <td align="center" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; color: Red">
+                <asp:Label ID="LabTatalNo" runat="server"></asp:Label>
+            </td>
+            <td align="right" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px;">
+                &#26465;&#20449;&#24687;
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td style="width: 5px">
+            </td>
+            <td align="left" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; width: 50px">
+                &#24403;&#21069;&#20026;&#31532;
+            </td>
+            <td align="center" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; color: Red">
+                <asp:Label ID="LabCurrentStart" runat="server"></asp:Label>
+            </td>
+            <td align="center" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; color: Red">
+                -
+            </td>
+            <td align="center" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px; color: Red">
+                <asp:Label ID="LabCurrentEnd" runat="server"></asp:Label>
+            </td>
+            <td align="right" style="font-family: &#24494;&#36719;&#38597;&#40657;; font-size: 12px;">
+                &#26465;&#20449;&#24687;
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
 </asp:Content>

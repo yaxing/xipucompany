@@ -11,6 +11,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using XpCtrl;
+using System.Drawing;
 
 public partial class Admin_newsManage : System.Web.UI.Page
 {
@@ -20,8 +21,8 @@ public partial class Admin_newsManage : System.Web.UI.Page
     {
         if(!Page.IsPostBack)
         {
-            this.NewsCreatePL.Visible = true;
-            this.NewsListPL.Visible = false;
+            this.NewsCreatePL.Visible = false;
+            this.NewsListPL.Visible = true;
             this.NewsUpdatePL.Visible = false;
             SourceBind();
         }
@@ -101,8 +102,21 @@ public partial class Admin_newsManage : System.Web.UI.Page
     {
         string strDbConn = ConfigurationManager.ConnectionStrings["xipuConnectionString"].ToString();
         XpNews xpnews = new XpNews(strDbConn);
-        this.GridView1.DataSource = xpnews.GetNews();
+        DataSet ds = xpnews.GetNews();
+        this.GridView1.DataSource = ds;
         this.GridView1.DataBind();
+        LabTatalNo.Text = ds.Tables[0].Rows.Count.ToString();
+        int buffer = this.GridView1.PageIndex * 10 + 1;
+        LabCurrentStart.Text = buffer.ToString();
+        if (this.GridView1.PageIndex * 10 + 10 >= ds.Tables[0].Rows.Count)
+        {
+            LabCurrentEnd.Text = ds.Tables[0].Rows.Count.ToString();
+        }
+        else
+        {
+            buffer = this.GridView1.PageIndex * 10 + 10;
+            LabCurrentEnd.Text = buffer.ToString();
+        }
     }
     protected void BtUpdate_Click(object sender, EventArgs e)
     {
@@ -123,5 +137,88 @@ public partial class Admin_newsManage : System.Web.UI.Page
         this.NewsCreatePL.Visible = false;
         this.NewsListPL.Visible = true;
         this.NewsUpdatePL.Visible = false;
+    }
+    protected void GridView1_RowCreated(object sender, GridViewRowEventArgs e)
+    {
+        #region 翻页绑定
+        if (e.Row.RowType == DataControlRowType.Pager)
+        {
+            Label label_Index = new Label();
+            LinkButton Button_IndexFirst = new LinkButton();
+            LinkButton Button_IndexLast = new LinkButton();
+            LinkButton Button_IndexNext = new LinkButton();
+            LinkButton Button_IndexPrevious = new LinkButton();
+
+            Button_IndexFirst.Text = "第一页 ";
+            Button_IndexFirst.Font.Size = 10;
+            Button_IndexFirst.Font.Name = "黑体";
+            Button_IndexFirst.CommandName = "first";
+            Button_IndexFirst.ForeColor = Color.Black;
+            Button_IndexFirst.Click += new EventHandler(PageButtonClick);
+
+            Button_IndexNext.Text = "   下一页 ";
+            Button_IndexNext.Font.Size = 10;
+            Button_IndexNext.Font.Name = "黑体";
+            Button_IndexNext.CommandName = "next";
+            Button_IndexNext.ForeColor = Color.Black;
+
+            Button_IndexNext.Click += new EventHandler(PageButtonClick);
+
+            Button_IndexPrevious.Text = "前一页 ";
+            Button_IndexPrevious.Font.Size = 10;
+            Button_IndexPrevious.Font.Name = "黑体";
+            Button_IndexPrevious.CommandName = "previous";
+            Button_IndexPrevious.ForeColor = Color.Black;
+            Button_IndexPrevious.Click += new EventHandler(PageButtonClick);
+
+            Button_IndexLast.Text = "最末页 ";
+            Button_IndexLast.Font.Size = 10;
+            Button_IndexLast.Font.Name = "黑体";
+            Button_IndexLast.CommandName = "last";
+            Button_IndexLast.ForeColor = Color.Black;
+            Button_IndexLast.Click += new EventHandler(PageButtonClick);
+
+            label_Index.Text = (GridView1.PageIndex + 1) + "/" + ((GridView)sender).PageCount + "页";
+            label_Index.Font.Size = 8;
+            e.Row.Controls[0].Controls[0].Controls[0].Controls[0].Controls.AddAt(0, (Button_IndexFirst));
+            e.Row.Controls[0].Controls[0].Controls[0].Controls[0].Controls.AddAt(1, (Button_IndexPrevious));
+
+            int controlTmp = e.Row.Controls[0].Controls[0].Controls[0].Controls.Count - 1;
+            e.Row.Controls[0].Controls[0].Controls[0].Controls[controlTmp].Controls.Add(Button_IndexNext);
+            e.Row.Controls[0].Controls[0].Controls[0].Controls[controlTmp].Controls.Add(Button_IndexLast);
+
+            e.Row.Controls[0].Controls[0].Controls[0].Controls[controlTmp].Controls.Add(label_Index);
+
+            //e.Row.Controls[0].Controls.Add(label_Index);
+        }
+        #endregion
+    }
+
+    protected void PageButtonClick(object sender, EventArgs e)
+    {
+        LinkButton clickedButton = ((LinkButton)sender);
+        if (clickedButton.CommandName == "first")
+        {
+            GridView1.PageIndex = 0;
+        }
+        else if (clickedButton.CommandName == "next")
+        {
+            if (GridView1.PageIndex < GridView1.PageCount - 1)
+            {
+                GridView1.PageIndex += 1;
+            }
+        }
+        else if (clickedButton.CommandName == "previous")
+        {
+            if (GridView1.PageIndex >= 1)
+            {
+                GridView1.PageIndex -= 1;
+            }
+        }
+        else if (clickedButton.CommandName == "last")
+        {
+            GridView1.PageIndex = GridView1.PageCount - 1;
+        }
+        SourceBind();
     }
 }
