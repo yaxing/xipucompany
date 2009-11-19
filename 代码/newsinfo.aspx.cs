@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Text;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
@@ -39,7 +40,8 @@ public partial class newsinfo : System.Web.UI.Page
         DataSet ds = new DataSet();
         ds = newsInfo.GetNewsInfo(newsID);
         this.newsTitleLB.Text = ds.Tables[0].Rows[0][1].ToString();
-        this.newsContentLT.Text = ds.Tables[0].Rows[0][3].ToString();
+        String content = Convert.ToString(ds.Tables[0].Rows[0]["content"]);
+        this.newsContentLT.Text = Server.HtmlDecode(content);
         this.authorLB.Text = ds.Tables[0].Rows[0][4].ToString();
         this.changeDateLB.Text = ds.Tables[0].Rows[0][6].ToString();
         this.clickNumLB.Text = ds.Tables[0].Rows[0][7].ToString();

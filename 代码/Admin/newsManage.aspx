@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Admin/MasterPageAdmin.master" AutoEventWireup="true"
     CodeFile="newsManage.aspx.cs" Inherits="Admin_newsManage" Title="&#26080;&#26631;&#39064;&#39029;" %>
 
+<%@ Register Assembly="DotNetTextBox" Namespace="DotNetTextBox" TagPrefix="DNTB" %>
 <%@ Import Namespace="XpCtrl" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="left" runat="Server">
     <ul id="menu" style="font-size: 12px; color: Black">
@@ -48,27 +49,17 @@
                         <asp:TextBox ID="TxtAuthor" runat="server" MaxLength="128"></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
-                    <th style="width: 80px">
-                        &#20869;&#23481;&#65306;<asp:RequiredFieldValidator ID="RequiredFieldValidator1"
-                            runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
-                            ControlToValidate="TxtScript" Display="Dynamic">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="&#20869;&#23481;&#38271;&#24230;&#24212;&#35813;&#22312;5&#20010;&#23383;&#31526;&#20197;&#19978;"
-                            ControlToValidate="TxtScript" ValidationExpression=".{5,}">*</asp:RegularExpressionValidator>
-                    </th>
-                    <td colspan="1" style="width: 320px">
-                        <asp:TextBox ID="TxtScript" runat="server" Height="75px" TextMode="MultiLine" Width="320px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <th style="width: 80px">
-                    </th>
-                    <td align="center" rowspan="1">
-                        <asp:Button ID="BtnSub1" runat="server" Text="&#25552;&#20132;" OnClick="BtnSub_Click" />
-                        &nbsp; &nbsp; &nbsp;<input id="BtnReset" type="reset" value="&#37325;&#32622;" />
-                    </td>
-                </tr>
             </table>
+            <div>
+                <strong style="font-size: 12px; margin: 2px">内容:</strong>
+                <DNTB:WebEditor ID="NewsAddWebEditor" Skin="skin/xp/" runat="server"></DNTB:WebEditor>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
+                    ControlToValidate="NewsAddWebEditor" Display="Dynamic">*</asp:RequiredFieldValidator>
+            </div>
+            <div style="padding: 0px 0px 0px 100px">
+                <asp:Button ID="BtnSub1" runat="server" Text="&#25552;&#20132;" OnClick="BtnSub_Click" />
+                &nbsp; &nbsp; &nbsp;<input id="BtnReset" type="reset" value="&#37325;&#32622;" />
+            </div>
         </asp:Panel>
         <asp:Panel ID="NewsListPL" runat="server">
             <div style="margin: 10px">
@@ -173,26 +164,16 @@
                         <asp:TextBox ID="TxtAuthorUpdate" runat="server" MaxLength="128"></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
-                    <th style="width: 80px">
-                        &#20869;&#23481; :<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server"
-                            ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;" ControlToValidate="TxtScriptUpdate"
-                            Display="Dynamic">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="&#20869;&#23481;&#38271;&#24230;&#24212;&#35813;&#22312;5&#20010;&#23383;&#31526;&#20197;&#19978;"
-                            ControlToValidate="TxtScriptUpdate" ValidationExpression=".{5,}">*</asp:RegularExpressionValidator>
-                    </th>
-                    <td colspan="1" style="width: 320px">
-                        <asp:TextBox ID="TxtScriptUpdate" runat="server" Height="75px" TextMode="MultiLine"
-                            Width="320px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <th style="width: 80px">
-                    </th>
-                    <td align="center" rowspan="1">
-                        <asp:Button ID="UpdateBt" runat="server" Text="&#30830;&#35748;" OnClick="BtUpdate_Click" />
-                    </td>
-                </tr>
+            </table>
+            <div>
+                <strong style="font-size: 12px; margin: 2px">内容:</strong>
+                <DNTB:WebEditor ID="NewsUpdateWebEditor" Skin="skin/xp/" runat="server"></DNTB:WebEditor>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
+                    ControlToValidate="NewsUpdateWebEditor" Display="Dynamic">*</asp:RequiredFieldValidator>
+            </div>
+            <div style="padding: 0px 0px 0px 180px">
+                <asp:Button ID="UpdateBt" runat="server" Text="&#30830;&#35748;" OnClick="BtUpdate_Click" />
+            </div>
             </table>
         </asp:Panel>
     </div>
