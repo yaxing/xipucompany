@@ -28,16 +28,15 @@ public partial class news : System.Web.UI.Page
             //分类列表
             string newstype = Request.QueryString["newstype"];
             if (newstype == null)
-                is_all = 1;
-            DataSet ds = xpnews.GetClassNews(newstype);
-            if (is_all == 0 && ds.Tables[0].Rows.Count != 0)
-            {
-                xpNewsList.DataSource = ds;
-                xpNewsList.DataBind();
-            }
-            else
             {
                 xpNewsList.DataSource = xpnews.GetNews();
+                xpNewsList.DataBind();
+            }
+            
+            else
+            {
+                DataSet ds = xpnews.GetClassNews(newstype);
+                xpNewsList.DataSource = ds;
                 xpNewsList.DataBind();
             }
         }
