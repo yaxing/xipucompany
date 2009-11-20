@@ -51,7 +51,7 @@
                 </tr>
             </table>
             <div>
-                <strong style="font-size: 12px; margin: 2px">内容:</strong>
+                <strong style="font-size: 12px; margin: 2px">&#20869;&#23481;:</strong>
                 <DNTB:WebEditor ID="NewsAddWebEditor" Skin="skin/xp/" runat="server"></DNTB:WebEditor>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
                     ControlToValidate="NewsAddWebEditor" Display="Dynamic">*</asp:RequiredFieldValidator>
@@ -99,26 +99,26 @@
                         </asp:BoundField>
                         <asp:TemplateField HeaderText="&#20462;&#25913;" ShowHeader="False">
                             <ItemTemplate>
-                                <div style="margin: 0px 0px 0px 5px">
-                                    <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="false" CommandName="Edit"
-                                        ImageUrl="~/Admin/images/edit.jpg" Text="&#32534;&#36753;" />
+                                <div>
+                                    <img src="images/edit.jpg" />
+                                    <asp:LinkButton ID="lbtnEdit" runat="server" CausesValidation="false" CommandName="Edit"><font style="font-family:&#24494;&#36719;&#38597;&#40657;; color:Black; font-size:12px">&#20462;&#25913;</font></asp:LinkButton>
                                 </div>
                             </ItemTemplate>
                             <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
                                 Height="30px" />
-                            <ItemStyle Height="50px" Width="30px" />
+                            <ItemStyle Height="50px" Width="50px" />
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="&#21024;&#38500;" ShowHeader="False">
                             <ItemTemplate>
-                                <div style="margin: 0px 0px 0px 5px">
-                                    <asp:ImageButton ID="ImageButton2" runat="server" CausesValidation="false" CommandName="Delete"
-                                        OnClientClick="return confirm('&#30830;&#35748;&#21024;&#38500;&#27492;&#26465;&#20449;&#24687;&#65311;')"
-                                        ImageUrl="~/Admin/images/delete.jpg" Text="&#21024;&#38500;" />
+                                <div>
+                                    <img src="images/delete.jpg" />
+                                    <asp:LinkButton ID="lbtnDelete" runat="server" CausesValidation="false" CommandName="Delete"
+                                        OnClientClick="return confirm('&#30830;&#35748;&#21024;&#38500;&#27492;&#26465;&#20449;&#24687;&#65311;')"><font style="font-family:&#24494;&#36719;&#38597;&#40657;; color:Black; font-size:12px">&#21024;&#38500;</font></asp:LinkButton>
                                 </div>
                             </ItemTemplate>
                             <HeaderStyle BackColor="#E0E0E0" Font-Names="&#24494;&#36719;&#38597;&#40657;" Font-Size="15px"
                                 Height="30px" />
-                            <ItemStyle Height="50px" Width="30px" />
+                            <ItemStyle Height="50px" Width="50px" />
                         </asp:TemplateField>
                     </Columns>
                     <EmptyDataTemplate>
@@ -166,7 +166,7 @@
                 </tr>
             </table>
             <div>
-                <strong style="font-size: 12px; margin: 2px">内容:</strong>
+                <strong style="font-size: 12px; margin: 2px">&#20869;&#23481;:</strong>
                 <DNTB:WebEditor ID="NewsUpdateWebEditor" Skin="skin/xp/" runat="server"></DNTB:WebEditor>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="&#20869;&#23481;&#19981;&#33021;&#20026;&#31354;"
                     ControlToValidate="NewsUpdateWebEditor" Display="Dynamic">*</asp:RequiredFieldValidator>

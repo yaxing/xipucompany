@@ -30,10 +30,10 @@ public partial class Admin_newsManage : System.Web.UI.Page
     }
     protected void BtnSub_Click(object sender, EventArgs e)
     {
-        String newsTitle = this.TxtNewsTitle.Text.ToString();
+        String newsTitle = this.TxtNewsTitle.Text.Trim();
         String typeName = this.NewsTypeDDL.SelectedValue.Trim();
         String newsContent = Server.HtmlEncode(this.NewsAddWebEditor.Text.Replace("'", "''"));
-        String author = this.TxtAuthor.Text.ToString();
+        String author = this.TxtAuthor.Text.Trim();
         XpNews newsIn = new XpNews(DbConnectString);
         if (newsIn.InsertNews(newsTitle, typeName, author, newsContent))
         {
@@ -123,10 +123,10 @@ public partial class Admin_newsManage : System.Web.UI.Page
     protected void BtUpdate_Click(object sender, EventArgs e)
     {
         String newsID = this.NewsID_HiddenField.Value.ToString();
-        String newsTitle = this.TxtNewsTitleUpdate.Text.ToString();
+        String newsTitle = this.TxtNewsTitleUpdate.Text.Trim();
         String typeName = this.NewsTypeDDLUpdate.SelectedValue.Trim();
         String newsContent = Server.HtmlEncode(this.NewsUpdateWebEditor.Text.Replace("'", "''"));
-        String author = this.TxtAuthorUpdate.Text.ToString();
+        String author = this.TxtAuthorUpdate.Text.Trim();
         XpNews newsIn = new XpNews(DbConnectString);
         if (newsIn.UpdateOneNews(newsID, newsTitle, typeName, newsContent, author))
         {
