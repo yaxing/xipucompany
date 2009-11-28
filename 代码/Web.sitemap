@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="~/index.aspx" title="主页"  description="">
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"  >
+    <siteMapNode url="index.aspx" title="主页"  description="">
       <siteMapNode url="~/projects.aspx" title="工程展示"  description="">
         <siteMapNode url="~/projectType.aspx" title="客户分类">
           <siteMapNode url="ProjectsIntro.aspx" title="工程简介"></siteMapNode>
@@ -15,7 +15,6 @@
       </siteMapNode>
         <siteMapNode url="~/bbs.aspx" title="客户留言"  description="" />
       <siteMapNode url="situation.aspx" title="关于我们">
-        
       </siteMapNode>
       <siteMapNode url="sales.aspx" title="营销网络">
         <siteMapNode url="customer.aspx" title="客户列表"></siteMapNode>
