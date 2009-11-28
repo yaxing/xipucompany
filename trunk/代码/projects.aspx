@@ -7,13 +7,17 @@
     <p>
         &nbsp;</p>
     <ul>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=0" target="_self">政府机关单位</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=1" target="_self">公安系统</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=2" target="_self">房地产住宅区</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=3" target="_self">企、事业单位</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=4" target="_self">公路收费站</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=5" target="_self">石化系统</a></li>
-        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">其他</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=0" target="_self">烟草系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=1" target="_self">银行系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=2" target="_self">证券系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=3" target="_self">酒店系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=4" target="_self">大楼、大厦</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=5" target="_self">厂矿</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">民航机场</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">公园</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">公安系统</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">政府机关</a></li>
+        <li id="news" align="left"><a href="./projectType.aspx?proType=6" target="_self">学校</a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">

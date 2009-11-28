@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Admin/adminIndex.aspx" title="主页"  description="">
+      <siteMapNode url="~/Admin/TecManagement.aspx" title="技术文档管理"  description="" />
+      <siteMapNode url="~/Admin/SalesManage.aspx" title="营业部/客户管理"  description="" />
+      <siteMapNode url="~/Admin/HrManage.aspx" title="招聘信息管理" description="">
+        <siteMapNode url="~/Admin/newJob.aspx" title="发布新信息" description=""/>
+        <siteMapNode url="~/Admin/editJob.aspx" title="修改招聘信息" description=""/>
+        <siteMapNode url="~/Admin/jobDetail.aspx" title="招聘信息详情" description=""/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/bbsManage.aspx" title="客户留言管理" description="">
+        <siteMapNode url="~/Admin/showMsg.aspx" title="客户留言详情" description=""/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/newsManage.aspx" title="新闻管理" description=""></siteMapNode>
+      <siteMapNode url="~/Admin/adminInfo.aspx" title="管理员信息" description=""></siteMapNode>
+      <siteMapNode url="~/Admin/ProjectManagement.aspx" title="工程管理" description=""></siteMapNode>
+    </siteMapNode>
+</siteMap>
