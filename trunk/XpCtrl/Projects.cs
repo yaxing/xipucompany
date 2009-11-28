@@ -62,5 +62,51 @@ namespace XpCtrl
             return ret;
         }
 
+        //===========================lkl================================//
+
+        public DataSet GetAllProjects()
+        {
+            DataSet ret = null;
+            try
+            {
+                ret = conn.executeQuery("select * from tbl_Project order by addTime desc");
+            }
+            catch(Exception e)
+            {
+                ret = null;
+            }
+            return ret;
+        }
+
+        public bool DeleteProjectByID (int id)
+        {
+            bool successfulDelete = true;
+            try
+            {
+                conn.executeQuery("delete from tbl_Project where ID = " + id);
+            }
+            catch
+            {
+                successfulDelete = false;
+            }
+            return successfulDelete;
+        }
+
+        public bool AddProject (string projectName , string description , int customerType , string imgName)
+        {
+            bool successful = true;
+            try
+            {
+                string sqlString = "insert into tbl_Project (projectName,projectIntro,customerType,imageName,addTime) "
+                                 + "values ('" + projectName + "','" + description + "','" + customerType + "','" + imgName + "','" + DateTime.Now + "')";
+
+                conn.executeUpdate(sqlString);   
+            }
+            catch
+            {
+                successful = false;
+            }
+            return successful;
+        }
     }
 }
