@@ -14,38 +14,45 @@
     <title>Deine Seite</title>
 </head>
 <body>
-<form runat="server">
-    <div id="big">
-        <h1 id="header">
-            云南希普防雷工程有限公司网站后台管理系统</h1>
-        <div style="position: relative; left: 560px; top: -20px; color: White;">
-            <%--<a href="#" style="color: White">退出登录并回到前台首页>></a>--%>
-            <asp:LinkButton runat="server" ID="logOut" OnClick="logOut_Click" CausesValidation="False"><font style=" font-family:微软雅黑; font-size:12px; color:White">退出登录并回到前台首页>></font></asp:LinkButton>
-        </div>
-        <div id="inlay">
-            <div>
-                <asp:ContentPlaceHolder ID="left" runat="server">
-                </asp:ContentPlaceHolder>
+    <form runat="server">
+        <div id="big">
+            <h1 id="header">
+                云南希普防雷工程有限公司网站后台管理系统</h1>
+            <div style="position: relative; left: 45px; top: -15px">
+                <asp:SiteMapPath ID="adminSiteMapPath" runat="server">
+                    <PathSeparatorStyle ForeColor="white" />
+                    <NodeStyle BackColor="Transparent" ForeColor="DarkGray" Font-Bold="False" Font-Size="11px"/>
+                    <RootNodeStyle ForeColor="DarkGray" Font-Bold="True" Font-Size="12px" />
+                    <CurrentNodeStyle ForeColor="#ffffff" Font-Size="12px"/>
+                </asp:SiteMapPath>
             </div>
-            <div id="content">
+            <div style="position: relative; left: 550px; top: -32px; color: White;">
+                <%--<a href="#" style="color: White">退出登录并回到前台首页>></a>--%>
+                <asp:LinkButton runat="server" ID="logOut" OnClick="logOut_Click" CausesValidation="False"><font style=" font-family:微软雅黑; font-size:12px; color:White">退出登录并回到前台首页>></font></asp:LinkButton>
+            </div>
+            <div id="inlay">
                 <div>
-                    <asp:ContentPlaceHolder ID="center" runat="server">
+                    <asp:ContentPlaceHolder ID="left" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
-            </div>
-            <div id="newsbox">
-                <div>
-                    <asp:ContentPlaceHolder ID="right" runat="server">
-                    </asp:ContentPlaceHolder>
+                <div id="content">
+                    <div>
+                        <asp:ContentPlaceHolder ID="center" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div id="newsbox">
+                    <div>
+                        <asp:ContentPlaceHolder ID="right" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
                 </div>
             </div>
+            <div id="push">
+                &nbsp;</div>
         </div>
-        <div id="push">
-            &nbsp;</div>
-    </div>
-    <div id="footer">
-        copyright by Forus</div>
-        </form>
+        <div id="footer">
+            copyright by Forus</div>
+    </form>
 </body>
-
 </html>

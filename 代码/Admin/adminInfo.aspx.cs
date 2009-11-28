@@ -15,7 +15,7 @@ public partial class Admin_adminInfo : System.Web.UI.Page
     adminManage adminCtrl;
     protected void Page_Load(object sender, EventArgs e)
     {
-        int flag = Convert.ToInt32(Request.QueryString["ID"]);
+        int flag = Convert.ToInt32(Request.QueryString["ID"]);/*flag=0为信息显示PANEL，1为密码确认PANEL，2为修改信息PANEL*/
 
             if (flag == 0)
             {
@@ -38,6 +38,8 @@ public partial class Admin_adminInfo : System.Web.UI.Page
                 adminShow.Visible = false;
                 adminCheck.Visible = false;
                 adminEdit.Visible = true;
+                lbEptEmail.Visible = false;
+                lbEptName.Visible = false;
                 if (!IsPostBack) 
                 {
                     tbName.Text = Session["admin"].ToString();
@@ -83,17 +85,28 @@ public partial class Admin_adminInfo : System.Web.UI.Page
         args[3] = tbTel.Text;
         int id = Convert.ToInt32(Session["adminId"].ToString());
 
-        int n = adminCtrl.UpdateInfo(id,args);
-        if (n <= 0)
+        if (tbName.Text.Length <= 0||tbName.Text==null)
         {
-            Response.Write("<script>alert('修改失败，请检查必填项');</script>");
+            lbEptName.Visible = true;
         }
-        else 
+        if(tbEmail.Text.Length<=0||tbEmail.Text == null)
         {
-            Response.Write("<script>alert('修改成功，请重新登录！');</script>");
-            Session.Clear();
-            Session.Abandon();
-            Response.Write("<script>location.href('adminLogIn.aspx');</script>");
+            lbEptEmail.Visible = true;
+        }
+        else if(tbName.Text.Length>0&&tbEmail.Text.Length>0)
+        {
+            int n = adminCtrl.UpdateInfo(id, args);
+            if (n <= 0)
+            {
+                Response.Write("<script>alert('修改失败，请重新操作！');</script>");
+            }
+            else
+            {
+                Response.Write("<script>alert('修改成功，请重新登录！');</script>");
+                Session.Clear();
+                Session.Abandon();
+                Response.Write("<script>location.href('adminLogIn.aspx');</script>");
+            }
         }
     }
     protected void cancelEdit_Click(object sender, EventArgs e)

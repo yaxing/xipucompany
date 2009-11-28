@@ -3,10 +3,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="left" runat="Server">
     <ul id="menu" style="font-size: 12px; color: Black">
-        <li class="active"><a href="adminIndex.aspx"><strong>工程管理</strong></a></li>
-        <li><a href="adminIndex.aspx"><strong>技术文档管理</strong></a></li>
-        <li><a href="adminIndex.aspx"><strong>客户管理</strong></a></li>
-        <li><a href="SalesManage.aspx"><strong>营业部管理</strong></a></li>
+        <li class="active"><a href="ProjectManagement.aspx"><strong>工程管理</strong></a></li>
+        <li><a href="TecManagement.aspx"><strong>技术文档管理</strong></a></li>
+        <li><a href="SalesManage.aspx"><strong>客户管理</strong></a></li>
+        <li><a href="SalesManage.aspx"><strong>客户/营业部</strong></a></li>
         <li><a href="HrManage.aspx"><strong>招聘信息管理</strong></a></li>
         <li><a href="bbsManage.aspx"><strong>客户留言管理</strong></a></li>
         <li><a href="newsManage.aspx"><strong>新闻管理</strong></a></li>
