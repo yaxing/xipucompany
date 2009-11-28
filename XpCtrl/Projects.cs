@@ -97,8 +97,8 @@ namespace XpCtrl
             bool successful = true;
             try
             {
-                string sqlString = "insert into tbl_Project (projectName,projectIntro,customerType,imageName,addTime) "
-                                 + "values ('" + projectName + "','" + description + "','" + customerType + "','" + imgName + "','" + DateTime.Now + "')";
+                string sqlString = "insert into tbl_Project (projectName,projectIntro,customerType,imageName,imagePath,addTime) "
+                                 + "values ('" + projectName + "','" + description + "','" + customerType + "','" + imgName + "','" + "./project_images/" + imgName + "','" + DateTime.Now + "')";
 
                 conn.executeUpdate(sqlString);   
             }
