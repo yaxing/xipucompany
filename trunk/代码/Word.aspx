@@ -11,7 +11,7 @@
 		<ul>
         <li id="news" align="left"><a href="./Situation.aspx" target="_self">公司简介</a></li>
         <li id="news" align="left"><a href="./Word.aspx" target="_self">总经理的话</a></li>
-        <li id="news" align="left"><a href="./Culture.aspx" target="_self">企业文化</a></li>
+        <%--<li id="news" align="left"><a href="./Culture.aspx" target="_self">企业文化</a></li>--%>
         <li id="news" align="left"><a href="./Structure.aspx" target="_self">公司结构</a></li>
         </ul>	
 </asp:Content>

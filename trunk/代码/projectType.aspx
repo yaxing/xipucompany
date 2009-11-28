@@ -42,7 +42,7 @@
                                 <ItemTemplate>
                                     <div id="news">
                                         <a href="ProjectsIntro.aspx?proId=<%#Eval("ID") %>">
-                                            <p>
+                                            <p style="font-size:13px">
                                                 <%#Eval("projectName") %>
                                             </p>
                                         </a>
