@@ -2,9 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="left" Runat="Server">
      <ul id="menu" style="font-size: 12px; color: Black">
-        <li class="active"><a href="#"><strong>工程管理</strong></a></li>
-        <li><a href="#"><strong>显示工程列表</strong></a></li>
-        <li><a href="#"><strong>添加工程项目</strong></a></li>        
+        <li class="active"><a href="ProjectManagement.aspx"><strong>工程管理</strong></a></li>
+        <li><a href="ProjectManagement.aspx"><strong>显示工程列表</strong></a></li>
+        <li><a href="AddProject.aspx"><strong>添加工程项目</strong></a></li>        
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="center" Runat="Server" >
