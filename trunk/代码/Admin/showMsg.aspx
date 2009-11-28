@@ -9,8 +9,8 @@
         <li><a href="adminIndex.aspx"><strong>营业部管理</strong></a></li>
         <li><a href="HrManage.aspx"><strong>招聘信息管理</strong></a></li>
         <li><a href="bbsManage.aspx"><strong>客户留言管理</strong></a></li>
-        <li><a href="adminIndex.aspx"><strong>新闻管理</strong></a></li>
-        <li><a href="adminIndex.aspx"><strong>管理员信息</strong></a></li>
+        <li><a href="newsManage.aspx"><strong>新闻管理</strong></a></li>
+        <li><a href="adminInfo.aspx?ID=0"><strong>管理员信息</strong></a></li>
     </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="center" runat="Server">
