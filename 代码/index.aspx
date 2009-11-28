@@ -35,13 +35,13 @@
                     <div id="news">
                         <table>
                             <tr>
-                                <td style="width: 220px">
+                                <td style="width: 220px; font-size:13px">
                                     <a href="newsinfo.aspx?newsID=<%#Eval("ID") %>">
                                         <%#Eval("title")%>
                                     </a>
                                 </td>
                                 <td style="width: 150px">
-                                    <font style="font-family: 微软雅黑; color: Black; font-size: 10px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
+                                    <font style="color: Black; font-size: 11px">添加时间:<%#Eval("addTime").ToString().Substring(0,10) %>
                                 </td>
                             </tr>
                         </table>
@@ -53,7 +53,7 @@
                 </ItemTemplate>
                 <FooterTemplate>
                     <p align="right">
-                        <a href="news.aspx"><font style="font-family: 黑体; font-size: 10px;">更多...</font></a>
+                        <a href="news.aspx"><font style="font-family: 黑体; font-size: 12px;">更多...</font></a>
                     </p>
                 </FooterTemplate>
             </asp:Repeater>
@@ -65,8 +65,8 @@
             <font style="font-family: '微软雅黑'; font-size: 16px">公司简介</font></h3>
         <div class="about">
             <ul>
-                <li>希普防雷公司</li><li>防雷工程公司</li><li>云南省昆明市</li><li>从事防雷工程</li><li>成立xx年</li><li>具有多年工程经验</li><li>
-                    资深防雷工程公司</li><li>多个大型工程</li></ul>
+                <li>目前云南省完成大型综合防雷工程最多的公司</li><li>目前云南省防雷设计、施工资质最高的公司之一</li><li>云南省最早成立的专业防雷公司</li><li>
+                    为客户提供性能可靠、经济适用的防雷设备</li><li>设计、施工质量全优</li><li>售后服务周到</li><li>丰富的防雷设计和防雷施工经验</li><%--<li>多个大型工程</li>--%></ul>
         </div>
     </div>
     <!-- cB2 -->

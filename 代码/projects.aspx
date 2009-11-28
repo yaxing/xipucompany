@@ -27,7 +27,7 @@
                 <div id="news">
                     <table>
                         <tr style="height:20px"></tr>
-                        <tr>
+                        <tr style="font-size:13px">
                             <td style="width: 5">
                             </td>
                             <td style="width: 5">

@@ -34,15 +34,15 @@
                                     <div id="news">
                                         <table>
                                             <tr>
-                                                <td style="width: 150px">
+                                                <td style="width: 150px; font-size:13px">
                                                     <a href="jobDetail.aspx?jobId=<%#Eval("ID")%>">
                                                         <%#Eval("title") %>
                                                     </a>
                                                 </td>
-                                                <td style="width: 110px">
+                                                <td style="width: 110px; font-size:11px">
                                                     部门：<%#Eval("department") %>
                                                 </td>
-                                                <td style="width: 250px">
+                                                <td style="width: 250px; font-size:11px">
                                                     添加时间：<%#Eval("changeTime") %>
                                                 </td>
                                             </tr>
