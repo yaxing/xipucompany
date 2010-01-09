@@ -8,37 +8,56 @@
         &nbsp;</p>
     <!--<h3>TESTIMONIALS</h3>  -->
     <ul>
-        
-            <li id="news" align="left"><a href="./projects.aspx" target="_self">工程展示</a></li>
-            <li id="news" align="left"><a href="./certification.aspx" target="_self">资质证明</a></li>
-            <li id="news" align="left"><a href="./tecSupport.aspx" target="_self">技术支持</a></li>
-            <li id="news" align="left"><a href="./bbs.aspx" target="_self">客户留言</a></li>
-   </ul>
+        <li id="news" align="left"><a href="./projects.aspx" target="_self">工程展示</a></li>
+        <li id="news" align="left"><a href="./certification.aspx" target="_self">资质证明</a></li>
+        <li id="news" align="left"><a href="./tecSupport.aspx" target="_self">技术支持</a></li>
+        <li id="news" align="left"><a href="./bbs.aspx" target="_self">客户留言</a></li>
+    </ul>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" runat="Server">
-<table>
+    <table>
         <tr>
-            <td>
-                <asp:Image ID="certification1" runat="server" Width="300px" ImageUrl="./certifications/certification1.jpg"/>
+            <td style="width: 30px">
             </td>
             <td>
-                <asp:Image ID="certification2" runat="server" Width="300px" ImageUrl="./certifications/certification2.jpg"/>
+                <asp:Image ID="certification1" runat="server" Width="600px" ImageUrl="./certifications/营业执照.jpg" />
             </td>
+            <%--<td>
+                <asp:Image ID="certification2" runat="server" Width="300px" ImageUrl="./certifications/地税合并.jpg"/>
+            </td>--%>
         </tr>
         <tr>
             <td>
-                <asp:Image ID="certification3" runat="server" Width="300px" ImageUrl="./certifications/certification3.jpg/"/>
             </td>
             <td>
+                <asp:Image ID="certification2" runat="server" Width="600px" ImageUrl="./certifications/地税合并.jpg/" />
+            </td>
+            <%--<td>
                 <asp:Image ID="certification4" runat="server" Width="300px" ImageUrl="./certifications/certification4.jpg"/>
+            </td>--%>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <asp:Image ID="certification3" runat="server" Width="600px" ImageUrl="./certifications/设计资质.jpg" />
+            </td>
+            <%--<td>
+                <asp:Image ID="certification6" runat="server" Width="300px" ImageUrl="./certifications/certification6.jpg"/>
+            </td>--%>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <asp:Image ID="certification4" runat="server" Width="600px" ImageUrl="./certifications/施工资质.jpg" />
             </td>
         </tr>
-        <tr >
+        <tr>
             <td>
-                <asp:Image ID="certification5" runat="server" Width="300px" ImageUrl="./certifications/certification5.jpg"/>
             </td>
             <td>
-                <asp:Image ID="certification6" runat="server" Width="300px" ImageUrl="./certifications/certification6.jpg"/>
+                <asp:Image ID="certification5" runat="server" Width="600px" ImageUrl="./certifications/组织机构代码证.jpg" />
             </td>
         </tr>
     </table>
