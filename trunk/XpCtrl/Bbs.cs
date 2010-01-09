@@ -59,7 +59,7 @@ namespace XpCtrl
             {
                n = 0;
             }
-            return 0;
+            return n;
         }
 
         public DataSet ShowMessage(int ID)

@@ -34,7 +34,7 @@
             <asp:TemplateField HeaderText="留言时间" HeaderStyle-Font-Names="微软雅黑" HeaderStyle-Font-Size="15px"
                 HeaderStyle-BackColor="#E0E0E0">
                 <ItemTemplate>
-                    <asp:Label ID="LabTime" runat="server" Font-Names="微软雅黑" Font-Size="12px" Text='<%#Eval("addTime").ToString().Substring(0,10) %>'></asp:Label>
+                    <asp:Label ID="LabTime" runat="server" Font-Names="微软雅黑" Font-Size="12px" Text='<%#Eval("addTime").ToString().Substring(0,8) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderStyle-BackColor="#E0E0E0" HeaderText="操作" HeaderStyle-Font-Names="微软雅黑" HeaderStyle-Font-Size="15px">
