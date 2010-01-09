@@ -157,9 +157,9 @@ public partial class Admin_bbsManage : System.Web.UI.Page
             int n = bbsM.DeleteMessage(index);
 
             SourceBind();
-            if (n == 0) 
+            if (n == 0)
             {
-                Response.Write("<script>alert('删除失败，请重新操作！');</script>");
+                Response.Write("<script>alert('删除失败，请重新操作！');history.go(-1);</script>");
             }
         }
         else if(e.CommandName == "showMessage")
